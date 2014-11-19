@@ -1,0 +1,834 @@
+body.show-tour-experience{
+	overflow: hidden;
+}
+
+.clock-svg{
+	.hands{
+		opacity: 0;
+		@include transition($fast $ease);
+	}	
+}
+
+#tour-experience-overlay{
+	position: fixed;
+	top: 0;
+	left: 100vw;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	background: white;
+	z-index: 10000;
+	@include transition($fast $ease);
+	
+	#tour-back-btn{
+		color: white;
+		text-decoration: none;
+		font-family: $font-stack-compressed;
+		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: 0.15em;
+		z-index: 1000;
+		position: absolute;
+		top:-60px;
+		left: 90px;
+		@include transition($fast $ease 1s);
+		&:before{
+			content:'';
+			background: url(../images/ui-icon-chevron-left-white.svg) no-repeat center center;
+			height: 20px;
+			width: 20px;
+			display: block;
+			position: absolute;
+			background-size: auto 100%;
+			top: 50%;
+			@include transform(translateY(-50%));
+			left: -40px;
+			@include transition($fast $ease);
+		}
+	}
+	
+	header{
+		height: 100vh;
+		position: absolute;
+		width: 100vw;
+		z-index: 10;
+		background: #252120 url(../images/bg-tour-intro-texture.jpg) no-repeat center center;
+		@include background-size(cover);
+		@include transition($slow $ease);
+		div#tour-intro-title{
+			z-index: 100;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			opacity: 0;
+			width: 100%;
+			@include transition(1s $ease 0.5s);
+			@include transform(translateY(-50%));
+			img{
+				&#the-tour-logo{
+					width: 185px;
+					height: auto;
+					position: absolute;
+					left:50%;	
+					margin-left: -440px;
+					margin-top: 70px;
+					z-index: 10;
+					opacity: 0;
+					@include transition($slow $ease 0.5s);
+				}
+				&#experience-stencil{
+					width: 700px;
+					left: 50%;
+					margin-left: -350px;
+					height: auto;
+					z-index: 100;
+					position: absolute;
+					opacity: 0;
+					top:0;
+					@include transform(scale(0.9));
+					@include transition($slow $ease 0.5s);
+				}
+			}
+			span{
+				position: absolute;
+				display: block;
+				left: 50%;
+				top: 50%;
+				margin-top: 100px;
+				opacity: 0;
+				color: white;
+				font-family: $font-stack-compressed;
+				text-transform: uppercase;
+				letter-spacing: 0.15em;
+				@include transition(1s $ease 1s);
+				@include transform(translateX(-50%));
+			}
+		}
+
+		#tour-intro-photo{
+			position: absolute;
+			left:0;
+			top:0;
+			width: 100%;
+			z-index: 1;
+			height: 100%;
+			background: #252120 url(../images/bg-tour-intro-photo.jpg) no-repeat center center;
+			@include transition($slow $ease $slow);
+			@include background-size(cover);
+		}
+		.clock{
+			top: 50%;
+			margin-top: 320px;
+			left:50%;
+			margin-left: 160px;		
+			opacity: 0;
+			@include transition(0.5s $ease 0.8s);
+			@include transform(translateX(-50%));	
+			span.clock-face{
+				@include transition($fast $ease);
+				svg	{
+					.fill-me{
+						fill: white;					
+					}
+					#time-800{
+						opacity: 1;
+					}
+				}
+			}
+			span.clock-cta{
+				opacity: 0;
+				position: relative;
+				left:-15px;
+				//@include transform('translateX(-200px)');
+				@include transition(0.5s $ease 1.3s);
+			}
+
+		}
+	}//header
+
+	&.begin{
+		left:0;
+		#tour-back-btn{
+			top: 50px;
+		}
+		div#tour-intro-title{
+			opacity: 1;
+			@include transform(translateY(-50%));
+			img{
+				&#the-tour-logo{
+					margin-top:-70px;
+					opacity: 1;
+				}
+				&#experience-stencil{
+					top:0;
+					@include transform(scale(1));
+					//margin-left: -350px;
+					opacity: 1;
+				}
+			}
+			span{
+				opacity: 1;
+				//margin-top: 100px;
+			}			
+		}
+		.clock{
+			margin-top: 260px;
+			opacity: 1;
+			.clock-cta{
+				opacity: 1;
+				left:0;
+				//@include transform('translateX(0)');
+			}
+		}
+		#tour-intro-photo{
+			@include filter(grayscale, 100%);
+			opacity: 0.05;
+		}
+	}
+	
+
+		
+	&.initiated{
+		header{
+
+		}
+		#tour-back-btn{
+			@include transition($fast $ease);
+			color: $color-black;
+			&:before{
+				background: url(../images/ui-icon-chevron-left-black.svg) no-repeat center center;				
+			}
+			&.white{
+				color: white;
+				&:before{
+					background: url(../images/ui-icon-chevron-left-white.svg) no-repeat center center;						
+				}
+			}
+		}
+		nav{bottom:0;}
+		article{
+			z-index: 100;
+			visibility: visible;
+		}
+	}
+
+	&.time-930{
+		#tour-back-btn{
+			color: $color-black!important;
+			&:before{
+				background: url(../images/ui-icon-chevron-left-black.svg) no-repeat center center!important;				
+			}
+		}
+	}
+	
+	.clock{
+		color: white;
+		text-decoration: none;
+		font-family: $font-stack-compressed;
+		font-weight: bold; 
+		text-transform: uppercase;
+		position: absolute;
+		padding-left: 160px;
+		letter-spacing: 0.15em;		
+		z-index: 100;
+		span.clock-face{
+			width: 140px;
+			height: 140px;
+			display: block;		
+			top:-50px;
+			left:0;	
+			position: absolute;
+			@include transition($fast $ease);
+		}
+		&:hover{
+			span.clock-face{
+				@include transform(scale(1.05));
+			}
+		}
+
+	}
+	
+	article{
+		height: 100vh;
+		width: 100vw;
+		position: absolute;
+		top:0;
+		left: 0;
+		z-index: 100;
+		overflow: hidden;
+		visibility: hidden;
+		
+		.time-slide{
+			position: absolute;
+			top:0;
+			left: 0;
+			width: 100vw;
+			visibility: hidden;
+			height: 100vh;
+			z-index: 10;
+			//opacity: 0;
+			//@include transition($fast $ease $slow);
+			
+
+			.clock{
+				margin-top: 70px;
+				@include transition($fast $ease $slow);
+			}
+			
+			&.current{
+				opacity: 1;
+				visibility: visible;
+			}
+			&.text-right{
+				.details{
+					right:0;
+					div{
+						padding-left: 10vw;
+					}
+				}
+				.background{
+					img{
+						@include transform-origin(bottom 25%);
+					}
+				}
+				.clock{}
+			}
+			&.text-left{
+				.details{
+					left:0;
+				}
+				.clock{left:5vw}
+				.background{
+					img{
+						@include transform-origin(bottom 75%);
+					}
+				}
+			}
+			&.photo-full{
+				.details{color: white;}
+				.clock{
+					color: white;
+					&:before{
+						background: url(../images/ui-tour-default-clock-white.svg) no-repeat center center;
+					}
+				}
+				.background{
+					img{
+						@include transform-origin(50% 50%);
+					}
+				}
+			}
+			
+			&.white-fill{
+				color: black;
+				.details{
+					background: white;
+					div{
+						color: $color-black;
+						.clock{
+							color: $color-black;
+						}
+					}
+				}		
+			}
+			
+			.bumper{
+				z-index: 200;
+				position: absolute!important;
+				top:0;
+				width: 100vw;
+				height: 100vh;
+				left: 100vw;
+				
+				background: #252120 url(../images/bg-tour-intro-texture.jpg) no-repeat center center!important;
+				-webkit-background-size: cover!important;
+				-moz-background-size: cover!important;
+				-o-background-size: cover!important;
+				background-size: cover!important;
+				visibility: hidden;
+				@include transition($slow $ease);
+
+				.anystretch{opacity: 0.1;}
+				
+				h1{
+					position: absolute;
+					width: 100%;
+					text-align: center;
+					top:50%;
+					line-height: 107px;
+					color: white;
+					font-size: 70px;
+					text-transform: uppercase;
+					font-family: $font-stack-compressed;
+					font-weight: bold;
+					letter-spacing: 2px;
+					//@include transform(translateY(-50%) scale(0.75));
+					@include transform(translateY(-50%));
+					@include transition($fast $ease);
+					-webkit-filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.3));
+					-moz-filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.3));
+					-ms-filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.3));
+					-o-filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.3));
+					span.stencil-number{
+						display: inline-block;
+						text-indent: -5000px;
+						overflow: hidden;
+						position: relative;
+						height: 107px;
+						@include background-size(cover);
+						top: 27px;
+						margin-right: 20px;
+						@include transform(translateY(50px));
+						opacity: 0;
+						@include transition($slow $ease 0.2s);
+					}
+					span.messaging{
+						opacity: 0;
+						//@include transform(translateY(50px));
+						@include transition($slow $ease 0.5s);
+					}
+				}
+			}
+			
+			.details{
+				width: 50vw;
+				position: absolute;
+				top:0;
+				height: 100vh;
+				z-index: 100;
+				div{
+					position: absolute;
+					color: white;
+					top:50%;
+					width: 100%;
+					margin-top: -50px;
+					@include transform(translateY(-50%));
+					padding: 5vw;
+					p{
+						margin-right: 6vw;
+						font-size: 24px;
+						line-height: 1.5em;
+						max-width: 600px;
+						position: relative;
+					}
+				}
+			}
+			.background{
+				position: absolute!important;
+				top:0;
+				height: 100vh;
+				z-index: 10;
+				opacity: 0;
+				left:0;
+				width: 100vw;
+				@include transition($fast $ease $slow);
+				img{
+					@include transform(scale(1.15));
+					@include transition(1s linear);
+				}
+			}
+			
+			&#slide-800{
+				.bumper{
+					h1{
+						span.stencil-number{
+							background: url(../images/stencil-tour-800.svg) no-repeat center center;
+							width: 250px;
+						}
+					}
+				}
+				.clock{
+					svg{
+						#time-800{
+							opacity: 1;
+						}
+					}
+					&:hover{
+						svg{
+							#time-800{
+								opacity: 0;
+							}
+							#time-900{
+								opacity: 1;
+							}
+						}					
+					}
+				}
+			}
+			
+			&#slide-900{
+				.bumper{
+					h1{
+						span.stencil-number{
+							background: url(../images/stencil-tour-900.svg) no-repeat center center;
+							width: 249px;
+						}
+					}
+				}
+				.clock{
+					svg{
+						#time-900{
+							opacity: 1;
+						}
+					}
+					&:hover{
+						svg{
+							#time-900{
+								opacity: 0;
+							}
+							#time-920{
+								opacity: 1;
+							}
+						}					
+					}
+				}				
+			}
+			
+			&#slide-920{
+				.bumper{
+					h1{
+						span.stencil-number{
+						background: url(../images/stencil-tour-920.svg) no-repeat center center;
+						width: 245px;
+						}
+					}
+				}
+				.clock{
+					svg{
+						.fill-me{
+							fill: white;
+						}
+						#time-920{
+							opacity: 1;
+						}
+					}
+					&:hover{
+						svg{
+							#time-920{
+								opacity: 0;
+							}
+							#time-930{
+								opacity: 1;
+							}
+						}					
+					}
+				}			
+			}
+			
+			&#slide-930{
+				.bumper{
+					h1{
+						span.stencil-number{
+							background: url(../images/stencil-tour-930.svg) no-repeat center center;
+							width: 250px;
+						}
+					}
+				}
+				.clock{
+					svg{
+						#time-930{
+							opacity: 1;
+						}
+					}
+					&:hover{
+						svg{
+							#time-930{
+								opacity: 0;
+							}
+							#time-945{
+								opacity: 1;
+							}
+						}					
+					}
+				}	
+			}
+			
+			&#slide-945{
+				.bumper{
+					h1{
+						span.stencil-number{
+							background: url(../images/stencil-tour-945.svg) no-repeat center center;
+							width: 247px;
+						}
+					}
+				}
+				.clock{
+					svg{
+						#time-945{
+							opacity: 1;
+						}
+					}
+					&:hover{
+						svg{
+							#time-945{
+								opacity: 0;
+							}
+							#time-955{
+								opacity: 1;
+							}
+						}					
+					}
+				}				
+			}
+			
+			&#slide-955{
+				.bumper{
+					h1{
+						span.stencil-number{
+							background: url(../images/stencil-tour-955.svg) no-repeat center center;
+							width: 246px;
+						}
+					}
+				}
+				.clock{
+					svg{
+						.fill-me{
+							fill: white;
+						}
+						#time-955{
+							opacity: 1;
+						}
+					}
+					&:hover{
+						svg{
+							#time-955{
+								opacity: 0;
+							}
+							#time-1000{
+								opacity: 1;
+							}
+						}					
+					}
+				}				
+			}
+			
+			&#slide-1000{
+				.bumper{
+					h1{
+						span.stencil-number{
+							background: url(../images/stencil-tour-1000.svg) no-repeat center center;
+							width: 305px;
+						}
+					}
+				}
+				.clock{
+					svg{
+						#time-1000{
+							opacity: 1;
+						}
+					}
+					&:hover{
+						svg{
+							#time-1000{
+								opacity: 0;
+							}
+							#time-1100{
+								opacity: 1;
+							}
+						}					
+					}
+				}			
+			}
+			
+			&#slide-1100{
+				.bumper{
+					h1{
+						span.stencil-number{
+							background: url(../images/stencil-tour-1100.svg) no-repeat center center;
+							width: 286px;
+						}
+					}
+				}
+				.clock{
+					margin-top: 80px;
+					left: 0;
+					position: relative;
+					clear: both;
+					float: left;
+					svg{
+						#time-1100{
+							opacity: 1;
+						}
+					}
+					&:hover{
+						svg{
+							#time-1100{
+								opacity: 0;
+							}
+							#time-800{
+								opacity: 1;
+							}
+						}					
+					}
+				}	
+			}
+			.anystretch img{
+
+			}
+			
+			&.active{
+				opacity: 1;
+				z-index: 100;
+				visibility: visible;
+				.details{
+					//opacity: 1;
+				}
+				.background{opacity: 1;}
+			}
+			
+		}//slides
+
+		&.loaded{
+			background: white;
+			.time-slide.active{
+				.bumper{
+					left:100vw;
+					visibility: hidden;
+					//z-index: 10;
+					.anystretch{
+						position: fixed!important;
+						opacity: 0;
+						@include transition($fast $ease $slow);
+					}
+					h1{
+						//@include transform(translateY(-50%) scale(0.75));
+						.stencil-number{
+							@include transform(translateY(100px));
+							opacity: 0;
+						}
+						.messaing{
+							//@include transform(translateY(100px));
+							opacity: 0;
+							
+						}
+					}
+				}
+				.background img{
+					@include transform(scale(1.15));
+					@include transition(30s ease-out);
+				}
+			}
+		}
+		&.started{background: white;}
+				
+		
+	} //article
+	
+	
+	&.loading{
+		.time-slide.active{
+			.bumper{
+				visibility: visible;
+				left:0;
+				h1{
+					//@include transform(translateY(-50%) scale(1));
+					//@include transition(1s $ease $slow);
+					span.stencil-number{
+						opacity: 1;
+						@include transform(translateY(0px));
+						//@include transition($fast $ease);
+					}
+					span.messaging{
+						opacity: 1;
+						//@include transform(translateY(0px));
+						//@include transition($fast $ease);
+					}
+				}
+			}
+			.background img{
+				@include transform(scale(1));
+			}
+		}
+		.details{
+			opacity: 0;
+			@include transition($fast $ease $slow);
+		}
+		nav{
+			bottom: -100px;
+			ul{
+				li{
+					top:100px;
+				}
+			}
+		}		
+		.background{
+			opacity: 1;
+
+		}	
+		#tour-back-btn{
+			top: -60px;
+		}
+	}
+	
+	&.time-1100{
+		nav{
+			.cta{
+				opacity: 0;
+			}
+		}
+	}
+
+	nav{
+		position: absolute;
+		bottom:-100px;
+		background: white;
+		z-index: 100;
+		height: 100px;
+		left:0;
+		opacity: 1;
+		width: 100vw;
+		@include transition($fast $ease $slow);
+		ul{
+			list-style: none;
+			left: 90px;
+			position: absolute;
+			@extend %clearfix;
+			bottom:0;
+			li{
+				float: left;
+				@extend %clearfix;
+				top: 0;
+				position: relative;
+				&:nth-child(1){@include transition($fast $ease 0.15s);}
+				&:nth-child(2){@include transition($fast $ease 0.2s);}
+				&:nth-child(3){@include transition($fast $ease 0.25s);}
+				&:nth-child(4){@include transition($fast $ease 0.3s);}
+				&:nth-child(5){@include transition($fast $ease 0.35s);}
+				&:nth-child(6){@include transition($fast $ease 0.4s);}
+				&:nth-child(7){@include transition($fast $ease 0.45s);}
+				&:nth-child(8){@include transition($fast $ease 0.5s);}
+				a{
+					color: $color-black;
+					display: block;
+					opacity: 0.5;
+					position: relative;
+					padding:0 40px 40px 20px;
+					border-left: 2px solid $color-black;
+					font-weight: bold;
+					font-family: $font-stack-compressed;
+					@include transition($fast $ease);
+					&:hover{
+						text-decoration: none;
+						opacity: 1;
+					}
+					&.active{
+						opacity: 1;
+					}					
+				}
+				&.thick-border{
+					a{
+						border-left-width: 4px;
+					}
+				}
+			}
+		}
+		.cta{
+			right:90px;
+			position: absolute;
+			top:50%;
+			@include transform(translateY(-50%));
+			@include transition(opacity $fast $ease $slow);
+		}
+	}//nav
+}//overlay

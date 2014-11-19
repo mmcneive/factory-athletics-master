@@ -1,0 +1,775 @@
+.show-nav{
+	nav#secondary.stuck, nav#calendar.stuck{
+		top:-83px!important;
+	}
+	#hero .intro{
+		margin-left: $open-nav-w;
+	}
+}
+
+
+#hero {
+	@include background-size (cover);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	height: 100vh;
+	color: $color-white;	
+	.intro {
+		width: 45%;
+		top:50%;
+		left: 155px;
+		position: fixed;
+		//margin: 0 0 0 -25%;
+		@include transform(translateY(-50%));
+		@include transition(margin-left $slow $ease);
+		line-height: 1.5;	
+		p {
+			color: #fefefe;
+			a{
+				color: $color-white;
+				text-decoration: underline;
+				&:hover{
+					text-decoration: none;
+				}
+			}
+			&.no-top-margin{
+				margin-top: 0;
+			}
+		}
+		ul {
+			margin: 60px 0 0;
+			list-style: none;
+		}
+		li {
+			float: left;
+			a {
+				display: block;
+				background: #e60e0f;
+				color: $color-white;
+				line-height: 58px;
+				padding: 0 30px;	
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+		h2{
+			color: #ff767b;
+			font-size: 30px;
+			line-height: 1.25;
+		}
+	}
+	.cta{
+		margin-right: 20px;
+	}
+	img {
+		position: absolute;
+		bottom: 120px;
+		right: 65px;
+	}
+}
+
+.page-template-page-ua-baseball-php{
+	#hero{
+		.intro{
+			width: 45%;
+		}
+	}
+
+	#info {
+		@extend %clearfix;
+		margin-top: $pad;
+		.col {
+			width: 50%;
+			float: right;
+			padding: 0 4vw;
+			line-height: 1.5;
+			color: $color-gray;
+			&.left {
+				float: left;
+				text-align: center;
+				padding: 4vw;
+			}
+			&.border {
+				border-right: 2px dotted $color-black;
+			}
+			&.full {
+				padding: 4vw 0;
+			}
+			&.photo { 
+				height: auto;
+				padding: 0;
+				line-height: 0;
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+		#photo {
+			width: 25vw;
+			height: 25vw;
+			left: 50%;
+			@include transform(translateX(-50%));
+			img {
+				@include border-radius(100%);
+				width:100%;
+				height: auto;
+			}
+		}
+		blockquote {
+			color: $color-blue;
+			text-transform: uppercase;
+			font: 30px/1.2 $font-stack-compressed;
+			letter-spacing: 2px;
+			font-weight: bold;
+			margin: $pad*2 0 $pad;
+		}
+		cite {
+			text-align: center;
+			font-size: 16px;
+			strong {
+				font-weight: bold;
+				display: block;
+			}
+		}
+		h3 {
+			font-size: 54px;
+			line-height: 1;
+			color: #363636;
+			font-weight: bold;
+			margin: 4vw 0 0;
+			strong {
+				font-size: 28px;
+				display: block;
+			}
+		}
+		.cta{
+			margin-right: 20px;
+		}
+	}
+	
+}
+
+.page-template-page-ua-all-america-game-php{
+	#date{
+		@extend %clearfix;
+		padding: 80px 65px 0;
+		article{
+			padding: 65px 5% 100px 0;
+			width: 50%;
+			float: left;
+			position: relative;
+			min-height: 550px;
+			h3{
+				color: $color-bright-red;	
+			}
+			h2{
+				color: $color-bright-red;
+				font-weight: bold;
+				font-size: 50px;
+			}
+			p{
+				color: #555555;
+				margin-bottom: 1em;
+				line-height: 1.5;
+			}
+			h4{
+				margin-top: 1em;
+				font-weight: bold;
+				font-size: 30px;
+				line-height: 1;
+			}
+			h5{
+				color: #555555;
+				margin-bottom: 2em;
+			}
+			&:after{
+				content: '';
+				position: absolute;
+				right: 0;
+				top:0;
+				width:1px;
+				border-left: 2px dotted $color-red;
+				height: 100%;
+				padding-bottom: 60px;
+			}
+			div{
+				/*top:50%;
+				padding-right: 5%;
+				position: absolute;
+				@include transform(translateY(-50%));*/
+			}
+			.cta{
+				margin-right: 20px;
+			}
+		}
+		aside{
+			width: 45%;
+			float: right;
+			position: relative;
+			min-height: 500px;
+			padding: 65px 0;
+			header{
+				position: relative;
+				h2{
+					color: $color-bright-red;
+					font-size: 26px;
+					font-weight: bold;
+					a{
+						color: $color-bright-red;
+						border-bottom: 3px solid $color-bright-red;
+						&:hover{
+							text-decoration: none;
+						}
+					}
+				}
+				.twitter-follow-button{
+					position: absolute;
+					right: 0;
+					top:0;
+				}
+			}
+			#tweets{
+				width: 100%;
+				bottom:30px;
+				position: absolute;
+				iframe{
+					width: 100%!important;
+					
+				}
+			}
+
+		}
+	}
+	
+	#videos{
+
+		div#video-player{
+			width: 70%;
+			border: 10px solid $color-red;
+			@extend %clearfix;
+			float: left;
+			position: relative;
+			img, video{
+				width: 100%;
+				height: auto;
+				float: left;
+			}
+		}
+		nav{
+			width: 30%;
+			position: relative;
+			float: left;
+			margin-top: 8%;
+			ul {
+				list-style: none;
+			}
+			
+			li {
+				display: block;
+				width: 100%;
+				margin: 15px 0;
+				a {								
+					display: block;
+					line-height: 28px;
+					padding: 0 0 0 34px;	
+					
+					text-transform: uppercase;
+					letter-spacing: 1px;
+					font-weight: 500;
+					color: #d0d0d0;
+					&:hover, &.active {
+						color: $color-red;
+						text-decoration: none;
+						background: url(../images/ui-triangle-right-red.svg) no-repeat -14px 0;
+						@include background-size(auto 100%);
+					}
+					&.active {
+						background-position: -1px 0;
+					}
+				}
+			}
+			
+			a#view-all{
+				margin-left: 38px;
+				margin-top: 30px;
+				position: relative;
+				display: block;
+				font-size: 15px;
+				color: $color-red;
+			}
+			
+			
+			@include breakpoint(small){
+				li{
+					margin: 5px 0;
+					a{
+						font-size: 18px;
+					}
+				}
+
+			}
+			@include breakpoint(large){
+				li{
+					margin: 15px 0;
+					a{
+						font-size: 24px;
+					}
+				}
+			}
+			
+		}
+	}
+	#roster{
+		padding: 80px 65px 65px;
+		h1{
+			text-align: center;
+			height: 46px;
+			position: relative;
+			display: block;
+			width: 100%;
+			background: transparent url(../images/stencil-heading-roster.svg) no-repeat center center;
+			background-size: auto 100%;
+			span{
+				display: none;
+			}
+		}
+		ul{
+			margin-top: 65px;
+			list-style: none;
+			li{
+				width: 17%;
+				float: left;
+				margin: 0 1.5% 20px;
+				@extend %clearfix;
+				&:nth-child(5n+1){
+					clear: both;
+				}
+				img{
+					width: 100%;
+					height: auto;
+					float: left;
+					border: 2px solid #dadada;
+					margin-bottom: 20px;
+				}
+				p{
+					font-size: 14px;
+					line-height: 1.5;
+					a{
+						color: $color-red;
+						text-decoration: underline;
+						&:hover{
+							text-decoration: none;
+						}
+					}
+				}
+			}
+		}
+	}
+	#gallery{
+		padding: 65px;
+		#mosaic{
+			div.col {
+				height: 50vw;
+				background-size: cover;
+				background-repeat: no-repeat;
+				div.col{
+					height: 25vw;
+					
+				}
+				&.left{
+					.col.clear.left{
+						&:before{
+							content:'';
+							width: 40px;
+							height: 40px;
+							background: transparent url(../images/ui-icon-diamond-blue-white-stroke.svg) no-repeat center center;
+							background-size: 100% auto;
+							position: absolute;
+							z-index: 900;
+							right: -20px;
+							top: -20px;
+						}
+					}
+				}
+			}
+			a{
+				width: 100%;
+				text-align: center;
+				&:after{
+					right: 40px;
+				}
+			}
+		}
+	}
+	
+	#details{
+		padding: 65px 65px 100px;
+		aside{
+			width: 50%;
+			float: left;
+			position: relative;	
+			img{
+				width: 90%;
+				height: auto;
+				margin-top: 40px;
+			}
+		}
+		article{
+			width: 50%;
+			float: left;
+			padding: 65px 5%;
+			position: relative;
+			&:before{
+				content: '';
+				width: 1px;
+				border-left: 2px dotted $color-black;
+				position: absolute;
+				top:0;
+				height: 100%;
+				left:0;
+			}
+			h1{
+				font-weight: bold;
+				color: $color-bright-red;
+			}
+			h2{
+				margin-top: 1em;
+				font-weight: bold;
+				font-size: 30px;
+				line-height: 1.25;
+			}
+			h3{
+				color: #555555;
+				margin-bottom: 2em;
+				font-size: 20px;
+				font-weight: bold;
+			}
+			p{
+				line-height: 1.5;
+				a{
+					color: $color-bright-red;
+					text-decoration: underline;
+					&:hover{
+						text-decoration: none;
+					}
+				}
+			}
+			ul{
+				list-style: none;
+				li{
+					clear: both;
+					margin-bottom: 10px;
+					a{
+						color: $color-bright-red;
+						text-decoration: underline;
+						&:hover{
+							text-decoration: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.page-template-page-ua-national-training-php{
+	#hero{
+		.intro{
+			width: 65%;
+			max-width: 700px;
+		}
+	}	
+
+	#events {
+		background: $color-white;
+		@extend %clearfix;
+		position: relative;
+	
+		
+		aside[role="complimentary"] {
+			width: 25%;
+			float: left;
+			position: absolute;
+			left:65px;
+			@extend %clearfix;
+			height: 100%;
+			padding: 80px 0 0 0;
+			
+			#filters{
+				@extend %clearfix;
+				
+				
+				/*.minict_wrapper:last-child{
+					margin-top: $pad*2 - 10;
+					@include transition($fast $ease);
+				}*/
+							
+				&.stuck{
+					position: fixed;
+					top:80px;
+					z-index: 100;
+					width: 25%;
+					.minict_wrapper:last-child{
+						margin-top: 0;
+					}
+				}
+				
+				&.passed{
+					position: absolute;
+					bottom: 10px;
+					width: 100%;
+				}
+				
+			}	
+	
+		}
+	
+	
+		article[role="main"] {
+			float: right;
+			width: 65%;
+			z-index: 20;
+			padding-top: 80px;
+			@extend %clearfix;
+			
+			table {
+				width: 100%;
+				border-bottom: 1px solid #dadada;
+				margin: 0 0 $pad 0;
+				line-height: 1.2;
+				
+				th {
+					font-size: 20px;
+					color: #969696;
+					border-bottom: 1px solid $color-white;
+					padding: 30px 0 0;
+				}
+				
+				td {
+					font-size: 14px;
+					vertical-align: top;
+					/*&:nth-child(1){
+						width: 20%
+					}
+					&:nth-child(2){
+						width: 60%
+					}
+					&:nth-child(3){
+						width: 20%
+					}*/
+					&.data{
+						color: #969696;
+						font-size: 20px;
+						width: 25%;
+						padding-bottom: 15px;
+						line-height: 40px;
+					}
+					&.name{
+						font-size: 30px;
+						padding-bottom: 15px;
+						line-height: 40px;
+					}
+					&.btn{
+						width: 100px;
+						padding-bottom: 15px;
+						text-align: right;
+						line-height: 40px;
+						a{
+							margin-right: 10px;
+						}
+					}
+					&.locale{
+						padding-bottom: 75px;
+						span{
+							font-size: 12px;
+							text-transform: uppercase;
+						}
+					}
+					&.desc{
+						padding-bottom: 75px;
+					}
+					
+				}
+				
+				.more-info-btn{
+					padding: 10px;
+					color: white;
+					background: #959595;
+					&:hover{
+						text-decoration: none;
+					}
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	#mosaic{
+		.left.photo:after{
+			content:'';
+			width: 40px;
+			height: 40px;
+			background: transparent url(../images/ui-icon-diamond-blue-white-stroke.svg) no-repeat center center;
+			background-size: 100% auto;
+			position: absolute;
+			z-index: 10000;
+			right: -20px;
+			bottom: -20px;
+		}
+	}
+	
+	
+	
+}
+
+#tabs{
+	border: 2px solid #c6c6c6;
+	border-radius: 3px;
+	z-index: 2;
+	margin-bottom: $pad - 10;
+	@extend %clearfix;
+	a{
+		width: 50%;
+		display: block;
+		float: left;
+		text-align: center;
+		color: #c6c6c6;
+		border-radius: 3px;
+		padding: 5px 0;
+		border: 2px white solid;
+		&:hover{
+			background: #c6c6c6;
+			color: white;
+			text-decoration: none;
+		}
+		&.active{
+			background-color: #c6191a;
+			color: white;
+			cursor: default;
+		}
+	}
+	
+}
+
+#ua-baseball {
+	padding-bottom: $pad*3;
+}
+
+#mosaic {
+	background: $color-blue;
+	clear: both;
+	width: 100%;
+	position: relative;
+	margin: -65px 0 0;
+	@extend %clearfix;
+	.col {
+		@include transition($fast $ease);
+		width: 50%;
+		height: 0;
+		&.left {
+			float: left;
+		}
+		&.right {
+			float: right;	
+		}
+		&#training {
+			background: url(../images/bg-training.jpg) no-repeat center center;
+			@include background-size(cover);
+			padding: 17vw 0;
+		}
+		&#national {
+			background: url(../images/bg-national.jpg) no-repeat center center;
+			@include background-size(cover);
+			padding: 17vw 0;
+		}
+		&#rookies {
+			background: url(../images/bg-rookies.jpg) no-repeat center center;
+			@include background-size(cover);
+			padding: 17vw 0;
+		}
+		&#tourney {
+			background: url(../images/bg-tourney.jpg) no-repeat center center;
+			@include background-size(cover);
+			padding: 17vw 0;
+		}
+	}
+	.double {
+		clear: both;
+		width: 100%;
+		height: 0;
+		&#allamerica {
+			background: url(../images/bg-all-america.jpg) no-repeat center center;
+			@include background-size(cover);
+			padding: 17vw 0;
+			img {
+				position: absolute;
+				top: -60px;
+				left: 50%;
+				@include transform(translateX(-50%));
+			}
+		}
+		&#quote {
+			color: $color-white;
+			padding: 7vw $pad;
+			height: auto;
+			blockquote {
+				margin: 0 0 $pad;
+				color: $color-white;
+			}
+		}
+		a {
+			text-align: center;
+		}
+	}
+	a {
+		position: absolute;
+		width: 100%;
+		top:50%;
+		padding: 0 65px;
+		color: $color-white;
+		@include transform(translateY(-50%));
+		h2 {
+			position: relative;
+			font-size: 54px;
+			font-weight: bold;
+			@include transition($fast $ease);
+			&:after {
+				content: '';
+				background: url(../images/ui-icon-chevron-right-white.svg) no-repeat center center;
+				height: 20px;
+				width: 20px;
+				background-size: auto 100%;
+				position: absolute;
+				bottom: 12px;
+				margin: 0 0 0 20px;
+				@include transition($fast $ease);
+			}
+			strong {
+				display: block;
+				font-size: 24px;
+				color: $color-light-blue;
+			}
+		}	
+		p {
+			line-height: 1.5;
+			@include transition($fast $ease);
+		}
+		&:hover {
+			text-decoration: none;
+			h2:after {
+				@include transition-delay(0.075s);
+				margin: 0 0 0 30px;
+			}
+			h2 {
+				margin: 0 0 40px;
+			}
+		}
+	}		
+
+}
+

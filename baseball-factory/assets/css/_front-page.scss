@@ -1,0 +1,895 @@
+#video {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+	z-index: 5;
+	background: #222;
+	h1 {
+		width: 60%;
+		max-width: 1200px;
+		height: auto;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		@include transform(translateX(-50%) translateY(-50%));
+		@include transition($slow $ease);
+		margin: 100px 0 0 0;
+		z-index: 200;
+		overflow: visible;
+		-webkit-filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.3));
+		-moz-filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.3));
+		-ms-filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.3));
+		-o-filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.3));
+		@include hide-text;
+		visibility: hidden;
+		opacity: 0;
+		&.shown{
+			visibility: visible;
+			opacity: 1;
+			margin-top: 0;
+		}
+		img{
+			width: 100%;
+			height: auto;
+			padding: 20px;
+		}
+		&.hide{
+			@include transform(translateX(-50%) scale(5));
+			@include opacity(0);
+		}
+	}
+	
+	.scroll {
+		background: url(../images/ui-icon-chevron-down-white.svg) no-repeat center center;
+		background-size: auto 14px;
+		display: block;
+		width: 100px;
+		height: 100px;
+		border:3px solid $color-white;
+		@include border-radius(50%);
+		position: absolute;
+		left: 50%;
+		bottom: 85px;
+		margin-left: -50px;
+		z-index: 200;
+		@include transform(translateY(300px));
+		@include transition($slow $ease);
+		&:hover {
+			bottom: 75px;
+		}
+		span{
+			display: none;
+		}
+		canvas{
+			position: absolute;
+			top:-13px;
+			left: -13px;
+			@include transform(rotate(-90deg));
+		}
+	}
+	
+	.get-started {
+		display: block;
+		width: 424px;
+		height: 107px;
+		position: absolute;
+		right: 0;
+		bottom: 80px;
+		overflow: hidden;
+		z-index: 200;
+		font-family: $font-stack-compressed;
+		@include transform(translateX(424px));
+		@include transition($fast $ease $slow);
+		
+		*{
+			@include transition($fast $ease);
+		}
+		
+		#logo{
+			width: 96px;
+			height: 58px;
+			background-size: 96px 58px;
+			position: absolute;z-index: 1000;
+			top:50%;
+			left: 72px;
+			@include transform-origin(center center);
+			@include transform(translateY(-50%));
+		}
+		
+		#powered-by{
+			background: #c20304;
+			display: block;
+			position: absolute;
+			z-index: 100;
+			left:-43px;
+			top:50%;
+			width: 140px;
+			text-align: center;
+			color: #850001;
+			text-transform: uppercase;
+			font-size: 12px;
+			letter-spacing: 2px;
+			@include transform-origin(center center);
+			@include transform(translateY(-50%) rotate(-75deg));
+		}
+		
+		#text-block{
+			background: #c20304;
+			position: absolute;
+			top:0;
+			right: -20px;
+			height: 110px;
+			width: 244px;
+			z-index: 100;
+			
+			span{
+				position: absolute;
+				top:50%;
+				left: 20px;
+				z-index: 100;
+				text-transform: uppercase;
+				display: block;
+				color: white;
+				font-size: 26px;
+				line-height: 1;
+				letter-spacing: 3px;
+				font-weight: 600;
+				@include transform(translateY(-50%));
+				small{
+					display: block;
+					color: #ff000a;
+					font-size: 15px;
+					letter-spacing: 2px;
+					font-weight: bold;
+					line-height: 1.5em;
+				}
+			}
+
+			i{
+				position: absolute;
+				right:20px;
+				top:50%;
+				width: 50px;
+				height: 50px;
+				
+				background: url(../images/ui-icon-chevron-right-white.svg) no-repeat center center;
+				background-size: auto 30px;
+
+				@include transform(translateY(-50%));
+				color: white;
+				z-index: 100;
+			}
+
+		}
+		
+		#get-started-background{
+			position: absolute;
+			top:0;
+			left: 0;
+			fill:#ed1c24;
+		}
+		
+		&:hover{
+			text-decoration: none;
+			#text-block{
+				span{
+					letter-spacing: 4px;
+					small{
+						color: white;
+					}
+				}
+				i.dashicons{
+					@include transform(translateY(-50%) translateX(5px));
+				}
+			}
+
+			#logo{
+				@include transform(scale(1.1) translateY(-50%));
+				left:63px;
+			}
+			
+			#powered-by{
+				@include transform(rotate(-90deg) translateY(-50%));
+				left:-46px;
+				top:38%;
+			}
+		}
+		
+	}
+	#vfx{
+		position: absolute;
+		top:0;
+		left: 0;
+		height: 100vh;
+		width: 100%;
+		z-index: 100;
+		-webkit-filter: drop-shadow(0px 0px 20px rgba(0,0,0,0.2));
+		-moz-filter: drop-shadow(0px 0px 20px rgba(0,0,0,0.2));
+		-ms-filter: drop-shadow(0px 0px 20px rgba(0,0,0,0.2));
+		-o-filter: drop-shadow(0px 0px 20px rgba(0,0,0,0.2));
+		}
+	#bg{
+		position: absolute;
+		top:0;
+		left: 0;
+		height: 100vh;
+		width: 100%;
+		z-index: 50;
+	}	
+	#hero-video{
+		position: absolute;
+		top:0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 100;
+		
+		#main-layer{
+			visibility: hidden;
+		}
+		video{
+			width: 100%;
+			height: auto;
+			top:0;
+			left: 0;
+			position: absolute;
+		}
+	}
+
+	&.s-active{
+		.get-started{
+			@include transform(translateX(0));
+		}
+		.scroll{
+			@include transform(translateY(0));
+		}
+	}	
+	
+}
+
+#intro {
+	z-index: 10;
+	position: relative;
+	width: 100%;
+	article, aside {
+		position: relative;
+		top:-50px;
+		float: left;
+		padding: 7vw 0;
+	}
+
+	article[role="main"] {
+		background: url(../images/bg-intro.jpg) no-repeat right top;
+		@include background-size (cover);
+		width: 30%;
+		position: absolute;
+		height: 100%;
+		div{
+			position: absolute;
+			top: 50%;
+			padding: 0 60px;
+			@include transform(translateY(-50%));
+			h2 {
+				margin: 0 0 40px;
+			}
+		}
+	}
+	
+	aside[role="complimentary"] {
+		color: $color-white;
+		left:30%;
+		position: relative;
+		width: 70%;
+		background: url(../images/bg-intro-aside.jpg) no-repeat right top;
+		@include background-size (cover);
+		
+		.col {
+			position: relative;
+			float: left;
+			width: 50%;
+			padding: 0 60px;
+			&:first-child {
+				border-right: 1px dotted #348587;
+				h2 {
+					background: url(../images/logo-the-tour.png) no-repeat center center;
+					display: block;
+					width: 273px;
+					height: 135px;
+					margin: -50px 0 0;
+					@include hide-text;
+				}	
+				
+				p {
+					margin: 20px 0 0;
+				}			
+			}
+			&:last-child {
+				height: 100%;
+				position: absolute;
+				top: 0;
+				right: 0;
+
+				img {
+					position: absolute;
+					top: 50%;
+					right: 50%;
+					margin: -45px -144px 0 0;
+				}
+			}
+		}
+	}
+}
+
+#nominate {
+	color: #585858;
+	padding: 45px 65px;
+	
+	p {
+		background: url(../images/bg-nominate.png) repeat-x left center;
+		font-size: 20px;
+		line-height: 24px;
+	}
+	
+	span {
+		background: $color-white;
+		padding: 0 33px 0 0;
+	}
+	
+	a {
+		background: $color-white url(../images/ui-icon-chevron-right-red.svg) no-repeat right top;
+		background-size: auto 20px;
+		color: #ed1c24;
+		font-weight: 500;
+		text-transform: uppercase;
+		float: right;
+		padding: 0 37px 0 33px;
+		&:hover {
+			padding-right: 42px;
+			margin-right: -5px;
+		}
+	}
+	
+}
+
+#event-gateway {
+	background: url(../images/bg-event-gateway.jpg) no-repeat center center;
+	@include background-size (cover);
+	height: 0;
+	padding: 17vw 0;
+	@include opacity(.2);
+	&.s-active {
+		@include opacity(1);
+	}
+	
+	.pre-hs, .hs {
+		position: absolute;
+		display: block;
+		height: 89px;
+		top: 55%;
+		margin-top: -45px;
+		@include opacity(0); 
+		@include transition(.3s $ease);
+		@include hide-text;
+	}
+	
+		.pre-hs {
+			background: url(../images/stencil-heading-prehs.svg) no-repeat;
+			width: 237px;
+			left: 65px;
+			@include transition-delay(0.6s);
+		}
+		
+		.hs {
+			background: url(../images/stencil-heading-hs.svg) no-repeat;
+			width: 86px;
+			right: 65px;
+			@include transition-delay(0.9s);
+		}
+	
+	&.s-active .pre-hs, &.s-active .hs {
+		top: 50%;
+		@include opacity(1);
+	}
+	
+}
+
+#latest {
+	padding: 65px;
+	font-size: 20px;
+	line-height: 2;
+	color: $color-white;
+	
+	h3 {
+		font-size: 40px;
+		padding: 0 40px;
+	}
+	
+	article, aside {
+		float: left;
+		width: 50%;
+		height: 0;
+		padding: 20vw 0;
+	}
+	
+	article[role="main"] {
+		background: url(../images/bg-alumni.jpg) no-repeat center center;
+		@include background-size (cover);
+		text-align: center;
+		position: relative;
+		//padding: 230px 65px 0 65px;
+		div{
+			position: absolute;
+			top:50%;
+			@include transform(translateY(-50%));
+			width: 100%;
+		}
+		a {
+			color: $color-white;
+		}
+		
+	}
+	
+	aside[role="complimentary"] {
+		width: 50%;
+		padding: 0;
+		position: relative;
+		.social {
+			@extend %clearfix;
+			top:0;
+			width: 100%;
+			position: absolute;
+		}
+		
+		.twitter, #instafeed {
+			height: 20vw;
+			width: 50%;
+			float: left;
+			overflow: hidden;
+		}
+		
+		.twitter {
+			background: $color-red;		
+			padding: 40px;
+			font-size: 18px;	
+			position: relative;
+			div{
+				position: absolute;
+				width: 100%;
+				top:50%;
+				padding: 0 40px;
+				left: 0;
+				@include transform(translateY(-50%));
+			}
+			p{
+				line-height: 1.5;
+			}
+			a {
+				background: url(../images/ui-icon-twitter-white.svg) no-repeat;
+				@include background-size(100% auto);
+				display: block;
+				width: 31px;
+				height: 25px;
+				@include hide-text;
+				position: absolute;
+				bottom: 40px;
+				left: 40px;
+			}
+			@include breakpoint(small){
+				h2{
+					font-size: 20px;
+				}
+				p{
+					//line-height: 1;
+					font-size: 14px;
+					margin:  10px 0;
+				}
+			}
+			@include breakpoint(large){
+				p{
+					//line-height: 1;
+					font-size: 18px;
+					margin:  10px 0;
+				}
+			}
+		}
+		
+		#instafeed {
+			
+			img {
+				width: 100%;
+				height: auto;
+			}
+			
+			a {
+				background: url(../images/ui-icon-ig-white.svg) no-repeat;
+				@include background-size(100% auto);
+				display: block;
+				width: 26px;
+				height: 26px;
+				@include hide-text;
+				position: absolute;
+				bottom: 40px;
+				left: 40px;
+			}
+			
+		}
+		
+		.headlines {
+			background: url(../images/bg-texture-black.jpg) no-repeat center center;
+			@include background-size (cover);
+			height: 20vw;
+			position: absolute;
+			top: 20vw;
+			width: 100%;
+			text-align: center;
+			div{
+				position: absolute;
+				width: 100%;
+				top:50%;
+				@include transform(translateY(-50%));
+
+			}			
+			ul {
+				list-style: none;
+				margin: 10px 0 0;	
+			}
+			
+			li {
+				background: url(../images/bg-headlines-li.png) no-repeat center top;
+				//padding: 10px 0;
+				&:first-child {
+					background: none;
+				}
+			}
+			
+			li a {
+				color: $color-white;
+			}
+			
+			p {
+				margin: 0;
+			}
+			
+			a {
+				color: $color-red;
+			}
+		}
+	}
+}
+
+#factory-fans {
+	background: url(../images/bg-factory-fans.jpg) no-repeat center center;
+	@include background-size (cover);
+	height: 0;
+	padding: 17vw 0;
+	@include opacity(.2); 
+	font-size: 20px;
+	line-height: 1.5;
+	color: $color-white;
+	&.s-active {
+		@include opacity(1);
+	}
+	
+	article {
+		width: 25%;
+		position: absolute;
+		bottom: 30px;
+		left: 65px;
+		@include opacity(0); 
+		@include transition($slow $ease);
+		@include transition-delay(0.6s);
+		&[role="right"] {
+			top: 30px;
+			right: 65px;
+			left: auto;
+			text-align: right;
+			@include transition-delay(0.9s);
+		}
+	}
+	
+	&.s-active article {
+		bottom: 60px;
+		@include opacity(1);
+		&[role="right"] {
+			top: 60px;
+		}
+	}
+	
+	a {
+		color: $color-white;
+	}
+	@include breakpoint(small){
+		h3{
+			font-size: 30px;
+		}
+	}
+	@include breakpoint(large){
+		h3{
+			font-size: 45px;
+		}
+	}
+	
+}
+
+#players {
+	padding: 65px;
+	
+	article, aside {
+		width: 50%;
+		height: 0;
+		padding: 20vw 0;
+		position: relative;
+		text-align: center;
+	}
+	
+	article[role="main"] {
+		background: url(../images/bg-texture-black.jpg) no-repeat center center;
+		@include background-size (cover);
+		float: left;
+		
+		
+		.headline {
+			position: absolute;
+			top:28%;
+			width: 100%;
+			@include opacity(.2);
+			@include transition(.3s $ease);
+			img{
+				height: auto;
+				width: 18vw;
+			}
+		}
+		
+		p {
+			color: $color-white;
+			margin-top: 30px;
+			@include opacity(0);
+			@include transition(.3s $ease);
+			@include transition-delay($slow);
+		}
+		
+		.squareimg {
+			background: #eee;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			height: 15vw;
+			width: 50%;
+			overflow: hidden;
+			@include opacity(.2);
+			@include transition(.6s $ease);
+			@include transition-delay(0.6s);
+			&.right {
+				right: 0;
+				left: auto;
+				@include transition-delay(0.9s);
+			}
+			
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+		
+	}
+	
+	&.s-active article[role="main"] .headline {
+		//margin-top: 0;
+		@include opacity(1);
+	}
+	
+	&.s-active article[role="main"] p {
+		@include opacity(1);
+		margin: 0;
+	}
+	
+	&.s-active article[role="main"] .squareimg {
+		@include opacity(1);
+	}
+	
+	aside[role="complimentary"] {
+		background: url(../images/bg-top-100.jpg) no-repeat center center;
+		@include background-size (cover);
+		float: right;
+		div{
+			position: absolute;
+			top:50%;
+			left:0;
+			width: 100%;
+			@include transform(translateY(-50%));
+		}
+		.headline {
+			margin-top: 0;
+			width: 18vw;
+			height: auto;
+			@include opacity(0);
+			@include transition($slow $ease);
+			@include transition-delay(1.2s);
+		}
+		span{
+			font-family: $font-stack-compressed;
+			color: white;
+			font-size: 10px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			position: absolute;
+			text-align: center;
+			width: 100%;
+			left: 0;
+			bottom: 140px;
+			@include opacity(0);
+			@include transition($slow $ease);
+			@include transition-delay(1.5s);
+		}
+		.logo {
+			position: absolute;
+			bottom: 20px;
+			width: 134px;
+			left: 50%;
+			display: block;
+			margin-left: -67px;
+			@include opacity(0);
+			@include transition($slow $ease);
+			@include transition-delay(1.5s);
+		}
+		
+	}
+	
+	&.s-active aside[role="complimentary"] .headline {
+		//margin-top: 147px;
+		@include opacity(1);
+	}
+	&.s-active aside[role="complimentary"] span {
+		@include opacity(1);
+	}
+		
+	&.s-active aside[role="complimentary"] .logo {
+		bottom: 50px;
+		@include opacity(1);
+	}
+	
+}
+
+#bftv {
+	padding-bottom: 65px;
+	@include display(flex);
+	
+	article, aside {
+		position: relative;
+	}
+	
+	article[role="main"] {
+		@include flex(2);
+		
+		p {
+			text-transform: uppercase;
+			font-weight: 500;
+			letter-spacing: 1px;
+			color: #d0d0d0;
+			margin: 20px 0 0;
+		}
+		
+		.video {
+			width: 100%;
+			border: 10px solid $color-red;
+			line-height: 0;
+			
+			img {
+				width: 100%;
+				height: auto;
+			}
+			
+		}
+		
+	}
+	
+	aside[role="complimentary"] {
+		@include flex(1);
+		
+		.summary {
+			background: url(../images/bg-bftv-summary.png) no-repeat left top;
+			height: 273px;
+			width: 120%;
+			margin: 0 0 0 -20%;
+			padding: 40px 40px 0 20%;
+			
+			h2 {
+				background: url(../images/ui-icon-video-white.svg) no-repeat left top;
+				@include background-size(auto 100%);
+				color: $color-red;
+				line-height: 28px;
+				padding: 0 0 0 74px;
+				margin: 0 0 0 -40px;
+			}
+			
+			p {
+				color: $color-white;
+				padding: 0 0 0 34px;
+			}
+			
+		}
+		
+		nav {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			
+			ul {
+				list-style: none;
+			}
+			
+			li {
+				display: block;
+				width: 100%;
+				margin: 15px 0;
+			}
+			
+			a {
+				
+				display: block;
+				line-height: 28px;
+				padding: 0 0 0 34px;	
+				
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				font-weight: 500;
+				color: #d0d0d0;
+				&:hover, &.active {
+					color: $color-red;
+					text-decoration: none;
+					background: url(../images/ui-triangle-right-red.svg) no-repeat -14px 0;
+					@include background-size(auto 100%);
+				}
+				&.active {
+					background-position: -1px 0;
+				}
+			}
+			@include breakpoint(small){
+				li{
+					margin: 5px 0;
+				}
+				a{
+					font-size: 18px;
+				}
+			}
+			@include breakpoint(large){
+				li{
+					margin: 15px 0;
+				}
+				a{
+					font-size: 24px;
+				}
+			}
+			
+		}
+		
+	}
+	
+}
+
+#partners {
+
+	padding-bottom: 130px;
+	
+	p {
+		background: url(../images/rule-gray-3px.jpg) repeat-x center center;
+		text-align: center;
+		color: #d0d0d0;
+		text-transform: uppercase;
+		font-weight: 500;
+		letter-spacing: 1px;
+		margin: 0 0 20px;
+		line-height: 1;
+		span {
+			background: $color-white;
+			padding: 0 10px;
+		}
+	}
+	
+	img {
+		width: 100%;
+		height: auto;
+	}
+	
+}

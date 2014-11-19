@@ -1,0 +1,787 @@
+#site-wrapper{
+	header{
+		height: 110px;
+		background: white;
+		position: fixed;
+		padding-bottom: 30px;
+		&.passed{
+			position: absolute;
+			top:25vw;
+			margin-top: -200px;
+		}
+		.logo{
+			padding: 30px 50px;
+			position: absolute!important;
+			a{
+				width: 180px;
+				height: 52px;
+				display: block;
+				background: url(../images/ui-logo-black.svg) no-repeat left top;
+				background-size: 180px 52px;
+			}
+		}
+		nav#utility-menu{
+			#phone-number{
+				color: black;
+			}
+
+			#login-btn{
+				#login-background {
+					fill: black;
+				}
+			}
+			
+			#search-btn{
+				a{
+					i{
+						background-image: url(../images/ui-icon-search-black.svg);
+					}
+				}
+			}
+		}
+	}
+	.toggle-nav{
+		left: 30px;
+		top:25vw;
+		margin-top: -60px;
+		height: 27px;
+		span{
+			display: none;
+		}
+		&:after{
+			@include transform(scale(1) rotate(0));
+			background: #1a1a1a;
+		}
+		&:hover{
+			i{
+				top:0;
+			}
+			&:after{
+				background-color: #c20304;
+			}
+		}
+		&.stuck{
+			&:after{
+				background: black;
+			}
+		}
+	}
+}
+@keyframes glitch{
+	0% {@include filter(blur, 0px);}
+	10% {@include filter(blur, 0px);}
+	12% {@include filter(blur, 1px);}
+	14% {@include filter(blur, 0px);}
+	40% {@include filter(blur, 0px);}
+	42% {@include filter(blur, 1px);}
+	44% {@include filter(blur, 0px);}
+}
+@keyframes glitch-t {
+	0% {@include transform(translateX(0px));}
+	1% {@include transform(translateX(4px));}
+	2% {@include transform(translateX(0px));}
+	3% {@include transform(translateX(-2px));}
+	4% {@include transform(translateX(0px));}
+}
+@keyframes glitch-t-color {
+	0% {@include transform(translateX(0px));}
+	1% {@include transform(translateX(6px));}
+	2% {@include transform(translateX(4px));}
+	3% {@include transform(translateX(-4px));}
+	4% {@include transform(translateX(0px));}
+}
+@keyframes glitch-m {
+	0% {@include transform(translateX(0px));}
+	1% {@include transform(translateX(6px));}
+	2% {@include transform(translateX(-2px));}
+	3% {@include transform(translateX(0px));}
+	4% {@include transform(translateX(3px));}
+	5%{@include transform(translateX(0px));}
+}
+@keyframes glitch-m-color {
+	0% {@include transform(translateX(0px));}
+	1% {@include transform(translateX(8px));}
+	2% {@include transform(translateX(-4px));}
+	3% {@include transform(translateX(0px));}
+	4% {@include transform(translateX(10px));}
+	5%{@include transform(translateX(0px));}
+}
+@keyframes glitch-b {
+	0% {@include transform(translateX(0px));}
+	1% {@include transform(translateX(4px));}
+	2% {@include transform(translateX(0px));}
+	3% {@include transform(translateX(-2px));}
+	4% {@include transform(translateX(0px));}
+}
+@keyframes glitch-b-color {
+	0% {@include transform(translateX(0px));}
+	1% {@include transform(translateX(6px));}
+	2% {@include transform(translateX(0px));}
+	3% {@include transform(translateX(-8px));}
+	4% {@include transform(translateX(0px));}
+}
+@keyframes glitch-hover {
+	0% {@include transform(translateX(0px));}
+	1% {@include transform(translateX(4px));}
+	2% {@include transform(translateX(0px));}
+	3% {@include transform(translateX(-2px));}
+	4% {@include transform(translateX(0px));}
+	10% {@include transform(translateX(0px));}
+	11% {@include transform(translateX(-3px));}
+	12% {@include transform(translateX(1px));}
+	13% {@include transform(translateX(-2px));}
+	14% {@include transform(translateX(0px));}
+	20% {@include transform(translateX(0px));}
+	21% {@include transform(translateX(1px));}
+	22% {@include transform(translateX(3px));}
+	23% {@include transform(translateX(0px));}
+	24% {@include transform(translateX(0px));}
+	30% {@include transform(translateX(0px));}
+	31% {@include transform(translateX(-1px));}
+	32% {@include transform(translateX(0px));}
+	33% {@include transform(translateX(-1px));}
+	34% {@include transform(translateX(0px));}
+	40% {@include transform(translateX(0px));}
+	41% {@include transform(translateX(4px));}
+	42% {@include transform(translateX(0px));}
+	43% {@include transform(translateX(-2px));}
+	44% {@include transform(translateX(0px));}
+	50% {@include transform(translateX(0px));}
+	51% {@include transform(translateX(-3px));}
+	52% {@include transform(translateX(1px));}
+	53% {@include transform(translateX(-2px));}
+	54% {@include transform(translateX(0px));}
+	60% {@include transform(translateX(0px));}
+	61% {@include transform(translateX(1px));}
+	62% {@include transform(translateX(3px));}
+	63% {@include transform(translateX(0px));}
+	64% {@include transform(translateX(0px));}
+	70% {@include transform(translateX(0px));}
+	71% {@include transform(translateX(-1px));}
+	72% {@include transform(translateX(0px));}
+	73% {@include transform(translateX(-1px));}
+	74% {@include transform(translateX(0px));} 	
+	80% {@include transform(translateX(0px));}
+	81% {@include transform(translateX(-3px));}
+	82% {@include transform(translateX(1px));}
+	83% {@include transform(translateX(-2px));}
+	84% {@include transform(translateX(0px));}
+	90% {@include transform(translateX(0px));}
+	91% {@include transform(translateX(1px));}
+	92% {@include transform(translateX(3px));}
+	93% {@include transform(translateX(0px));}
+	94% {@include transform(translateX(0px));}
+	100% {@include transform(translateX(0px));}	
+}
+@keyframes glitch-hover-color {
+	0% {@include transform(translateX(0px));}
+	1% {@include transform(translateX(6px));}
+	2% {@include transform(translateX(0px));}
+	3% {@include transform(translateX(-10px));}
+	4% {@include transform(translateX(0px));}
+	10% {@include transform(translateX(0px));}
+	11% {@include transform(translateX(-5px));}
+	12% {@include transform(translateX(3px));}
+	13% {@include transform(translateX(-4px));}
+	14% {@include transform(translateX(0px));}
+	20% {@include transform(translateX(0px));}
+	21% {@include transform(translateX(3px));}
+	22% {@include transform(translateX(5px));}
+	23% {@include transform(translateX(0px));}
+	24% {@include transform(translateX(0px));}
+	30% {@include transform(translateX(0px));}
+	31% {@include transform(translateX(-3px));}
+	32% {@include transform(translateX(0px));}
+	33% {@include transform(translateX(-3px));}
+	34% {@include transform(translateX(0px));}
+	40% {@include transform(translateX(0px));}
+	41% {@include transform(translateX(6px));}
+	42% {@include transform(translateX(0px));}
+	43% {@include transform(translateX(-24px));}
+	44% {@include transform(translateX(0px));}
+	50% {@include transform(translateX(0px));}
+	51% {@include transform(translateX(-5px));}
+	52% {@include transform(translateX(3px));}
+	53% {@include transform(translateX(-4px));}
+	54% {@include transform(translateX(0px));}
+	60% {@include transform(translateX(0px));}
+	61% {@include transform(translateX(3px));}
+	62% {@include transform(translateX(5px));}
+	63% {@include transform(translateX(0px));}
+	64% {@include transform(translateX(0px));}
+	70% {@include transform(translateX(0px));}
+	71% {@include transform(translateX(-3px));}
+	72% {@include transform(translateX(0px));}
+	73% {@include transform(translateX(-3px));}
+	74% {@include transform(translateX(0px));} 	
+	80% {@include transform(translateX(0px));}
+	81% {@include transform(translateX(-5px));}
+	82% {@include transform(translateX(3px));}
+	83% {@include transform(translateX(-4px));}
+	84% {@include transform(translateX(0px));}
+	90% {@include transform(translateX(0px));}
+	91% {@include transform(translateX(3px));}
+	92% {@include transform(translateX(5px));}
+	93% {@include transform(translateX(0px));}
+	94% {@include transform(translateX(0px));}
+	100% {@include transform(translateX(0px));}	
+}
+#hero{
+	background: black url(../images/bg-bftv-hero.jpg) no-repeat center center;
+	@include background-size(cover);
+	height: 25vw;
+	text-align: center;
+	margin-top: 110px;
+	.bftv {
+		position: absolute;
+		width: 250px;
+		height: 66px;
+		top:50%;
+		left: 50%;
+		background: transparent url(../images/stencil-bftv.svg) no-repeat center center;
+		@include background-size(100% auto);
+		@include transform(translateY(-50%) translateX(-50%));
+	}
+	#glitch{
+		width:360px;
+		margin:  0 auto;
+		position: relative;
+		height: 66px;
+		top:50%;
+		margin-top: -33px;
+		overflow: visible;
+		left: 50%;
+		margin-left: -130px;
+		@include animation(glitch 5s infinite $ease);
+		.glitch-section{
+			height: 22px;
+			position: absolute;
+			left:50%;
+			@include transform(translateX(-50%));
+			width: 100%;
+			overflow-y: hidden;
+			overflow-x: visible;
+			&#glitch-top{
+				top:0;
+				div{
+					top:0;
+					&.white{
+						@include animation(glitch-t 5s infinite $ease alternate-reverse);
+					}
+					&.blue{
+						@include animation(glitch-t-color 5s infinite $ease alternate-reverse);
+					}
+					&.red{
+						@include animation(glitch-t-color 5s infinite $ease alternate-reverse);
+					}
+
+				}				
+			}
+			&#glitch-mid{
+				top: 22px;
+				div{
+					top:-22px;
+					&.white{
+						@include animation(glitch-m 5s infinite $ease alternate-reverse);
+					}
+					&.blue{
+						@include animation(glitch-m-color 5s infinite $ease alternate-reverse);
+					}
+					&.red{
+						@include animation(glitch-m-color 5s infinite $ease alternate-reverse);
+					}
+					
+				}
+			}
+			&#glitch-bottom{
+				top: 44px;
+				div{
+					top:-44px;
+					&.white{
+						@include animation(glitch-b 5s infinite $ease alternate-reverse);
+					}
+					&.blue{
+						@include animation(glitch-b-color 5s infinite $ease alternate-reverse);
+					}
+					&.red{
+						@include animation(glitch-b-color 5s infinite $ease alternate-reverse);
+					}
+				}
+			}
+			div{
+				position: absolute;
+				left:0;
+				width: 250px;
+				height: 100%;
+				&.white{
+					z-index: 1000;
+				}
+				&.blue{
+					z-index: 100;
+					opacity: 0.5;
+					svg *{
+						fill: blue;
+					}
+				}
+				&.red{
+					z-index: 10;
+					opacity: 0.5;
+					svg *{
+						fill: red;
+					}
+				}
+			}
+		}
+		&:hover{
+			cursor: pointer;
+			@include animation(glitch 2s infinite $ease);
+			.glitch-section{
+				&#glitch-top{
+					div.white{
+						@include animation(glitch-hover 3s 1 $ease alternate);
+					}
+					div.blue{
+						@include animation(glitch-hover-color 3.05s 1 $ease alternate);
+					}
+					div.red{
+						@include animation(glitch-hover-color 3.1s 1 $ease alternate);
+					}	
+				}
+				&#glitch-mid{
+					div.white{
+						@include animation(glitch-hover 3.1s 1 $ease alternate);
+					}
+					div.blue{
+						@include animation(glitch-hover-color 3.15s 1 $ease alternate);
+					}
+					div.red{
+						@include animation(glitch-hover-color 3.2s 1 $ease alternate);
+					}	
+				}
+				&#glitch-bottom{
+					div.white{
+						@include animation(glitch-hover 3.2s 1 $ease alternate);
+					}
+					div.blue{
+						@include animation(glitch-hover-color 3.25s 1 $ease alternate);
+					}
+					div.red{
+						@include animation(glitch-hover-color 3.3s 1 $ease alternate);
+					}	
+				}				
+			}
+		}
+	}
+}
+
+#watching{
+	background: #1a1a1a;
+	color: white;
+	padding: 65px;
+	
+	article{
+		width: 65%;
+		float: left;
+		
+		h2{
+			font-size: 16px;
+			color: #969696;
+		}
+		
+		h3{
+			color: white;
+			margin: 20px 0 40px;
+			font-size: 32px;
+		}
+		img{
+			width: 100%;
+			height: auto;
+		}
+		#caption{
+			color: #969696;
+			font-size: 16px;
+			line-height: 1.25;
+			padding-left: 72px;
+			margin-right: 10vw;
+			position: relative;
+			background: transparent url(../images/ui-icon-info-grey.svg) no-repeat 24px 6px;
+			@include background-size(20px 20px);
+		}
+		.cta{
+			line-height: 38px
+		}
+	
+	}
+	
+	aside{
+		width: 25%;
+		float: right;
+		margin-top: 50px;
+		position: relative;
+		#playlist-picker{
+			color: #969696;
+			text-decoration: none;
+			padding-left: 25px;
+			padding-right: 25px;
+			z-index: 1010;
+			position: relative;
+			display: inline-block;
+			z-index: 1020;
+			line-height: 1;
+			&:before{
+				content:'';
+				background: transparent url(../images/ui-icon-list-white.svg) no-repeat center center;
+				position: absolute;
+				left: 0; 
+				top: 4px;
+				width: 14px;
+				height: 10px;
+				@include background-size(100% auto);
+				@include transition($fast $ease);
+			}
+			&:after{
+				content:'';
+				background: transparent url(../images/ui-icon-chevron-down-white.svg) no-repeat center center;
+				position: absolute;
+				right: 0;
+				top: 6px;
+				width: 12px;
+				height: 7px;
+				@include transition($fast $ease);
+				@include background-size(100% auto);
+			}
+			#playlist-name{
+				border-bottom: 2px solid white;
+				color: white;
+				@include transition($fast $ease);
+			}
+			&.open{
+				&:after{
+					@include transform(translateX(-10px));
+					opacity: 0;
+				}
+				#playlist-name{
+					border-bottom: none;
+					color:	#969696;
+				}
+				&:before{
+					opacity: 0;
+					@include transform(rotate(45deg));
+				}	
+			}
+		}
+		ul{list-style: none;}
+		#playlist-options{
+			//display: none;
+			visibility: hidden;
+			background: black;
+			width: 100%;
+			position: absolute;
+			z-index: 1010;
+			left:-10px;
+			top:0;
+			padding: 10px 35px;
+			max-width: 25px;
+			overflow: hidden;
+			max-height: 25px;
+			@include transition($slow $ease);
+			&:before{
+				content:'';
+				background: transparent url(../images/ui-icon-close.svg) no-repeat center center;
+				@include background-size(12px auto);
+				position: absolute;
+				top:13px;
+				left:13px;
+				height: 12px;
+				width: 12px;
+				opacity: 0;
+				@include transform(rotate(-45deg));
+				@include transition($fast $ease);
+
+			}
+			&.open{
+				visibility: visible;
+				max-height: 5000px;
+				max-width: 5000px;
+				a{
+					opacity: 1;
+				}
+				&:before{
+					opacity: 1;
+					@include transition($fast $ease);
+					@include transform(rotate(0));
+				}
+			}
+			a{
+				color: white;
+				opacity: 0;
+				&:hover{
+				text-decoration: none;
+				}
+				&.selected{
+					color: #6d6d6d;
+					&:hover{
+						cursor: default;
+						border:none;
+					}
+				}
+				&:hover{
+					border-bottom: 2px solid white;
+				}
+			}
+		}
+		.scroll-pane{
+			position: relative;
+			margin-top: 20px;
+			height: 100%;
+			outline: none;
+			//overflow: scroll;
+		}
+		.video-list{
+			height: 100%;
+			position: relative;
+			display: none;
+
+			li{
+				width: 100%;
+				clear: both;
+				float: left;
+				margin-bottom: 10px;
+				position: relative;
+				display:block;
+				opacity: 0;
+				@include transform(translateX(100%));
+				@include transition($fast $ease $slow);
+
+				a{
+					color: white;
+					text-decoration: none;
+					position: relative;
+					display:block;		
+					margin-right: 5px;
+					@extend %clearfix;		
+					
+					div.thumb{
+						position: relative;
+						display: block;
+						float: left;
+						width: 40%;
+						overflow: hidden;
+						&:before{
+							content:'';
+							background: transparent url(../images/ui-icon-play-white.svg) no-repeat center center;
+							@include background-size(1vw auto);
+							display: block;
+							width: 3vw;
+							height: 3vw;
+							position: absolute;
+							left:50%;
+							top:50%;
+							@include opacity(0);
+							z-index: 1000;
+							border: 2px solid white;
+							@include border-radius(100%);
+							@include transform-origin(center center);
+							@include transform(translateY(-40%) translateX(-50%));
+							@include transition($fast $ease);
+						}
+						&:after{
+							content: '';
+							position: absolute;
+							top:0;
+							left:0;
+							width: 100%;
+							height: 100%;
+							background: #393939;
+							@include opacity(0);
+							@include transition($fast $ease);
+						}						
+						
+						img{
+							width: 100%;
+							display: block;
+							height: auto;
+							@include transition(6s linear);	
+						}
+					}
+					
+					p{
+						font-size: 13px;
+						line-height: 1.25;
+						display: block;
+						width: 55%;
+						margin: 0;
+						@include transform(translateY(-50%));
+						top: 50%;
+						position: absolute;
+						right: 0;
+						@include transition($fast $ease);
+						
+					}
+					
+					&:hover{
+						color: #6d6d6d;
+						p{
+							right: 5px;
+						}
+						div.thumb{
+							&:after{
+								@include opacity(0.7);
+							}
+							&:before{
+								@include transform(translateY(-50%) translateX(-50%));
+								@include opacity(1);
+							}
+							img{
+								@include transform(scale(1.25));
+								
+							}
+						}
+					}
+					
+					&.playing{
+						div.thumb{
+							&:after{
+								@include opacity(0.7);
+								background: $color-red;
+							}
+						}
+						&:hover{
+							color: white;
+							cursor: default;
+							div.thumb{
+								&:after{
+									@include opacity(0.7);
+								}
+								&:before{
+									//@include transform(translateY(-50%) translateX(-50%));
+									display:none!important;
+									visibility: hidden!important
+								}
+								img{
+									@include transform(scale(1));
+								}
+							}						
+						}
+					}
+					
+				}
+								
+			}
+			&.shown{
+				display: block;
+				li{
+					@include transform(translateX(0));
+					opacity: 1;
+				}
+			}	
+			
+		}
+	}
+}
+
+#lists{
+	padding: 65px;
+	article{
+		width: 49%;
+		float: left;
+		margin-right: 2%;
+		margin-bottom: 4%;
+		&:nth-child(even){
+			margin-right: 0;
+		}
+		h4{
+			color: #013a88;
+			font-size: 18px;
+			float: left;
+			a{
+				color: #6d6d6d;
+				margin-left: 10px;
+				&:hover{
+					color:  #013a88;
+					text-decoration: none;
+				}
+			}
+		}
+		
+		ul{
+			list-style: none;
+			clear: both;
+		
+			li{
+				width: 48%;
+				float: left;
+				margin-right: 4%;
+				&:nth-child(even){
+					margin-right: 0;
+				}
+				a{
+					.thumb{
+						margin: 20px 0 0;
+						position: relative;
+						overflow: hidden;
+						img{
+							width: 100%;
+							height: auto;
+							position: relative;
+							display: block;		
+							@include transition(6s linear);					
+						}
+						&:before{
+							content:'';
+							background: transparent url(../images/ui-icon-play-white.svg) no-repeat center center;
+							@include background-size(1.5vw auto);
+							display: block;
+							width: 4vw;
+							height: 4vw;
+							position: absolute;
+							left:50%;
+							top:50%;
+							opacity: 0;
+							z-index: 1000;
+							border: 3px solid white;
+							@include border-radius(100%);
+							@include transform-origin(center center);
+							@include transform(translateY(-40%) translateX(-50%));
+							@include transition($fast $ease);
+						}
+						&:after{
+							content: '';
+							position: absolute;
+							top:0;
+							left:0;
+							width: 100%;
+							height: 100%;
+							background: #c6191a;
+							opacity: 0;
+							@include transition($fast $ease);
+						}
+					}
+					p{
+						font-size: 14px;
+						color: #6d6d6d;
+						margin: 10px 0;
+						line-height: 1.25;
+					}					
+					&:hover{
+						text-decoration: none;
+						.thumb{
+							&:after{
+								opacity: 0.7;
+							}
+							&:before{
+								@include transform(translateY(-50%) translateX(-50%));
+								opacity: 1;
+							}
+							img{
+								@include transform(scale(1.25));
+								
+							}
+						}
+					}
+				}
+
+			}
+		}
+	}
+}

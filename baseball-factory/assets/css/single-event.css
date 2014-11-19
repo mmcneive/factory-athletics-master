@@ -1,0 +1,1287 @@
+#hero.single-event, #stats article, #alumni-callout, #experience-callout, #tour-experience-overlay nav ul, #tour-experience-overlay nav ul li {
+  *zoom: 1; }
+  #hero.single-event:before, #stats article:before, #alumni-callout:before, #experience-callout:before, #tour-experience-overlay nav ul:before, #tour-experience-overlay nav ul li:before, #hero.single-event:after, #stats article:after, #alumni-callout:after, #experience-callout:after, #tour-experience-overlay nav ul:after, #tour-experience-overlay nav ul li:after {
+    content: " ";
+    display: table; }
+  #hero.single-event:after, #stats article:after, #alumni-callout:after, #experience-callout:after, #tour-experience-overlay nav ul:after, #tour-experience-overlay nav ul li:after {
+    clear: both; }
+
+
+#site-wrapper .toggle-nav {
+  top: 400px; }
+
+#hero.single-event {
+  width: 100%;
+  padding: 0;
+  top: 0; }
+  #hero.single-event #intro {
+    width: 100%;
+    position: relative;
+    height: 800px;
+    background: url(../images/bg-single-events-generic-hero.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    #hero.single-event #intro div#wayfinder {
+      position: absolute;
+      left: 60px;
+      -webkit-transform: translateY(-260%);
+      -moz-transform: translateY(-260%);
+      -ms-transform: translateY(-260%);
+      -o-transform: translateY(-260%);
+      transform: translateY(-260%); }
+      #hero.single-event #intro div#wayfinder h1 {
+        color: #a3d8ec;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 2px; }
+      #hero.single-event #intro div#wayfinder h2 {
+        color: #a3d8ec;
+        font-size: 22px;
+        font-weight: 500;
+        margin-top: 10px;
+        letter-spacing: 1px; }
+        #hero.single-event #intro div#wayfinder h2 em {
+          font-style: normal;
+          color: white !important; }
+    #hero.single-event #intro div#messaging {
+      position: absolute;
+      width: 50%;
+      bottom: 0;
+      right: 0;
+      color: white;
+      padding-left: 60px;
+      margin-top: 50px;
+      border-left: 2px dotted white; }
+      #hero.single-event #intro div#messaging h3 {
+        font-size: 50px;
+        margin: -50px 120px 40px 0; }
+        #hero.single-event #intro div#messaging h3:after {
+          content: '';
+          width: 44px;
+          height: 44px;
+          background: transparent url(../images/ui-icon-diamond-white-stroke.svg) no-repeat center center;
+          -webkit-background-size: 44px 44px;
+          -moz-background-size: 44px 44px;
+          -o-background-size: 44px 44px;
+          background-size: 44px 44px;
+          display: block;
+          position: absolute;
+          left: -23px;
+          top: -45px; }
+      #hero.single-event #intro div#messaging p {
+        margin: 50px 120px 120px 0; }
+        #hero.single-event #intro div#messaging p a {
+          color: white;
+          text-decoration: underline; }
+      #hero.single-event #intro div#messaging ul {
+        list-style: none;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        -webkit-transform: translateY(50%);
+        -moz-transform: translateY(50%);
+        -ms-transform: translateY(50%);
+        -o-transform: translateY(50%);
+        transform: translateY(50%); }
+        #hero.single-event #intro div#messaging ul li a {
+          color: white;
+          float: left; }
+          #hero.single-event #intro div#messaging ul li a:first-child {
+            margin-right: 30px; }
+    #hero.single-event #intro #photo {
+      -webkit-border-radius: 100%;
+      border-radius: 100%;
+      background-clip: padding-box;
+      /* stops bg color from leaking outside the border: */
+      position: absolute;
+      overflow: hidden;
+      width: 25vw;
+      height: 25vw;
+      left: 12.5vw;
+      bottom: 0;
+      z-index: 100;
+      -webkit-transform: translateY(50%);
+      -moz-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+      -o-transform: translateY(50%);
+      transform: translateY(50%); }
+      #hero.single-event #intro #photo img {
+        width: 140%;
+        height: auto;
+        left: -20%;
+        position: relative; }
+    #hero.single-event #intro #photo-diamond {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      z-index: 200;
+      margin-bottom: -15px;
+      margin-left: -15px;
+      bottom: -12.5vw;
+      left: 25vw; }
+    #hero.single-event #intro #rings {
+      position: absolute;
+      overflow: visible;
+      width: 25vw;
+      height: 25vw;
+      left: 12.5vw;
+      bottom: 0;
+      z-index: 10; }
+      #hero.single-event #intro #rings div {
+        border: 1px solid white;
+        width: 25vw;
+        height: 25vw;
+        position: absolute;
+        top: 50%;
+        -webkit-border-radius: 100%;
+        border-radius: 100%;
+        background-clip: padding-box;
+        /* stops bg color from leaking outside the border: */ }
+        #hero.single-event #intro #rings div#ring-1 {
+          opacity: 0.7;
+          filter: alpha(opacity=70);
+          -webkit-transform: scale(0.9);
+          -moz-transform: scale(0.9);
+          -ms-transform: scale(0.9);
+          -o-transform: scale(0.9);
+          transform: scale(0.9); }
+        #hero.single-event #intro #rings div#ring-2 {
+          opacity: 0.5;
+          filter: alpha(opacity=50);
+          -webkit-transform: scale(1.2);
+          -moz-transform: scale(1.2);
+          -ms-transform: scale(1.2);
+          -o-transform: scale(1.2);
+          transform: scale(1.2); }
+        #hero.single-event #intro #rings div#ring-3 {
+          opacity: 0.3;
+          filter: alpha(opacity=30);
+          -webkit-transform: scale(1.45);
+          -moz-transform: scale(1.45);
+          -ms-transform: scale(1.45);
+          -o-transform: scale(1.45);
+          transform: scale(1.45); }
+        #hero.single-event #intro #rings div#ring-4 {
+          opacity: 0.2;
+          filter: alpha(opacity=20);
+          -webkit-transform: scale(1.7);
+          -moz-transform: scale(1.7);
+          -ms-transform: scale(1.7);
+          -o-transform: scale(1.7);
+          transform: scale(1.7); }
+  #hero.single-event aside {
+    width: 50%;
+    position: relative;
+    float: left;
+    z-index: 100; }
+    #hero.single-event aside#quote blockquote {
+      color: #38a6cf;
+      font-family: "franklin-gothic-urw-comp", Arial, sans-serif;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 30px;
+      line-height: 1.25;
+      width: 70%;
+      top: 50%;
+      position: relative;
+      padding: 15vw 0 0;
+      margin: 0 auto; }
+    #hero.single-event aside#quote p {
+      text-align: center;
+      line-height: 1.5;
+      color: #6d6d6d;
+      font-size: 16px; }
+    #hero.single-event aside#schedule {
+      border-left: 2px dotted #c20304;
+      padding: 10vw 60px;
+      color: #6d6d6d; }
+      #hero.single-event aside#schedule ul {
+        list-style: none; }
+        #hero.single-event aside#schedule ul li {
+          clear: both;
+          width: 100%;
+          float: left;
+          margin-bottom: 20px;
+          padding-bottom: 20px;
+          border-bottom: 1px solid #f4d1d1; }
+          #hero.single-event aside#schedule ul li:last-child {
+            border-bottom: none; }
+          #hero.single-event aside#schedule ul li#header {
+            color: #6d6d6d;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 16px;
+            border-bottom: none; }
+          #hero.single-event aside#schedule ul li label {
+            float: left;
+            width: 30%;
+            line-height: 1.25;
+            position: relative; }
+            #hero.single-event aside#schedule ul li label img {
+              height: 36px;
+              margin-right: 5px;
+              width: auto; }
+            #hero.single-event aside#schedule ul li label span {
+              position: absolute;
+              color: #ed1c24;
+              text-transform: uppercase;
+              top: 0;
+              letter-spacing: 2px;
+              font-weight: bold;
+              font-size: 24px;
+              line-height: 16px;
+              font-family: "franklin-gothic-urw-comp", Arial, sans-serif; }
+          #hero.single-event aside#schedule ul li p {
+            float: left;
+            width: 70%;
+            margin: 0;
+            line-height: 1.25; }
+
+#video-callout {
+  height: 30vw;
+  width: 100%;
+  background: #212121 url(../images/bg-single-events-video-callout.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  #video-callout p {
+    color: white;
+    width: 20vw;
+    font-size: 16px;
+    text-align: right;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0 0 0 -20vw;
+    line-height: 1.25;
+    -webkit-transform: translateY(-50%) translateX(-100px);
+    -moz-transform: translateY(-50%) translateX(-100px);
+    -ms-transform: translateY(-50%) translateX(-100px);
+    -o-transform: translateY(-50%) translateX(-100px);
+    transform: translateY(-50%) translateX(-100px); }
+
+#triptych {
+  width: 100%;
+  padding: 5vw 0;
+  z-index: 100; }
+  #triptych article {
+    position: relative;
+    height: 25vw;
+    float: left;
+    width: 33.33%;
+    padding: 5vh 0;
+    background: #38a6cf;
+    text-align: center;
+    overflow: hidden; }
+    #triptych article div {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%); }
+    #triptych article img {
+      width: 20px;
+      height: 20px; }
+    #triptych article h1 {
+      color: white;
+      font-weight: bold;
+      margin: 2.5vh 0;
+      font-size: 25px; }
+    #triptych article p {
+      line-height: 1.25;
+      padding: 0 60px; }
+    #triptych article:nth-child(2) {
+      z-index: 100;
+      background: #38a6cf url(../images/bg-single-event-triptych.jpg) center center no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
+
+#stats {
+  position: relative; }
+  #stats article {
+    width: 100%;
+    position: relative;
+    height: 100%; }
+    #stats article #mosaic {
+      width: 50%;
+      background: black;
+      float: left; }
+      #stats article #mosaic .top-left {
+        width: 50%;
+        float: left;
+        padding: 10vw 0;
+        background: #38a6cf url(../images/bg-single-events-stats-mosaic-01.jpg) center center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+      #stats article #mosaic .top-right {
+        width: 50%;
+        float: left;
+        padding: 10vw 0;
+        background: #38a6cf url(../images/bg-single-events-stats-mosaic-02.jpg) center center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+      #stats article #mosaic .bottom {
+        padding: 10vw 0;
+        clear: both;
+        background: #38a6cf url(../images/bg-single-events-stats-mosaic-03.jpg) center center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+    #stats article #panel {
+      background: #c20304 url(../images/bg-single-event-stats.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      width: 50%;
+      position: absolute;
+      height: 100%;
+      right: 0;
+      top: 0; }
+      #stats article #panel div {
+        text-align: center;
+        color: white;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%); }
+        #stats article #panel div h1 {
+          font-weight: bold;
+          font-size: 40px;
+          padding-bottom: 10%;
+          opacity: 0.9;
+          filter: alpha(opacity=90); }
+        #stats article #panel div p {
+          opacity: 0.5;
+          filter: alpha(opacity=50);
+          font-weight: bold; }
+        #stats article #panel div ul {
+          list-style: none;
+          margin: 30px auto 0;
+          position: relative; }
+          #stats article #panel div ul li {
+            display: inline-block;
+            position: relative; }
+            #stats article #panel div ul li h2 {
+              font-family: "franklin-gothic-urw-comp", Arial, sans-serif;
+              font-weight: bold;
+              letter-spacing: 2px;
+              font-size: 80px;
+              opacity: 0.9;
+              filter: alpha(opacity=90); }
+            #stats article #panel div ul li span {
+              opacity: 0.5;
+              filter: alpha(opacity=50);
+              font-weight: 500;
+              line-height: 1.25;
+              letter-spacing: 2px;
+              font-size: 15px;
+              display: inline-block;
+              margin-top: 30px;
+              text-transform: uppercase; }
+            #stats article #panel div ul li:nth-child(2) {
+              padding: 0 100px; }
+              #stats article #panel div ul li:nth-child(2):before {
+                content: '';
+                position: absolute;
+                left: 30px;
+                top: 40px;
+                width: 20px;
+                height: 20px;
+                background: transparent url(../images/ui-icon-diamond-white.svg) no-repeat center top;
+                -webkit-background-size: 15px auto;
+                -moz-background-size: 15px auto;
+                -o-background-size: 15px auto;
+                background-size: 15px auto;
+                opacity: 0.5;
+                filter: alpha(opacity=50); }
+              #stats article #panel div ul li:nth-child(2):after {
+                content: '';
+                position: absolute;
+                right: 40px;
+                top: 40px;
+                width: 20px;
+                height: 20px;
+                background: transparent url(../images/ui-icon-diamond-white.svg) no-repeat center top;
+                -webkit-background-size: 15px auto;
+                -moz-background-size: 15px auto;
+                -o-background-size: 15px auto;
+                background-size: 15px auto;
+                opacity: 0.5;
+                filter: alpha(opacity=50); }
+
+#alumni-callout {
+  padding: 10vh 60px; }
+  #alumni-callout article {
+    position: relative;
+    width: 50%;
+    float: right; }
+    #alumni-callout article img {
+      float: left;
+      left: -150px;
+      position: relative;
+      z-index: 200; }
+    #alumni-callout article p {
+      position: absolute;
+      left: 150px;
+      color: #6d6d6d;
+      top: 50%;
+      padding-right: 40px;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+      line-height: 1.5; }
+      #alumni-callout article p b {
+        margin-bottom: 10px;
+        position: relative;
+        display: inline-block; }
+      #alumni-callout article p a {
+        color: #6d6d6d;
+        margin-top: 10px;
+        position: relative;
+        display: inline-block;
+        text-decoration: underline; }
+
+#experience-callout {
+  padding-bottom: 60px;
+  clear: both;
+  width: 100%;
+  position: relative; }
+  #experience-callout #experience-gateway {
+    width: 50%;
+    float: left;
+    position: relative;
+    height: 0;
+    background: transparent url(../images/bg-single-events-tour-callout.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 16vw 0;
+    min-height: 60vh; }
+    #experience-callout #experience-gateway div {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      padding-right: 5vw;
+      width: 55%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%); }
+    #experience-callout #experience-gateway h1 {
+      color: #013a88;
+      font-weight: bold;
+      font-size: 50px; }
+    #experience-callout #experience-gateway p {
+      color: #808080;
+      max-width: 700px; }
+      #experience-callout #experience-gateway p strong {
+        color: #525252; }
+    #experience-callout #experience-gateway a {
+      font-size: 18px; }
+  #experience-callout #mosaic {
+    width: 50%;
+    position: relative;
+    float: left; }
+    #experience-callout #mosaic .col {
+      height: 16vw;
+      width: 50%;
+      min-height: 30vh; }
+      #experience-callout #mosaic .col.left {
+        background: transparent url(../images/bg-single-event-tour-mosaic-01.jpg) no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        float: left; }
+      #experience-callout #mosaic .col.right {
+        background: transparent url(../images/bg-single-event-tour-mosaic-02.jpg) no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        float: right; }
+    #experience-callout #mosaic .double {
+      height: 16vw;
+      min-height: 30vh;
+      background: transparent url(../images/bg-single-event-tour-mosaic-03.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      clear: both;
+      width: 100%; }
+  #experience-callout #register-gateway {
+    padding-top: 1vh;
+    clear: both; }
+    #experience-callout #register-gateway #vertical-dotted-line {
+      height: 10vh; }
+
+.connectors svg {
+  width: auto;
+  height: 100%; }
+.connectors:before {
+  content: '';
+  width: 44px;
+  height: 44px;
+  background: transparent url(../images/ui-icon-diamond-red-stroke.svg) no-repeat center center;
+  -webkit-background-size: 44px 44px;
+  -moz-background-size: 44px 44px;
+  -o-background-size: 44px 44px;
+  background-size: 44px 44px;
+  display: block;
+  position: absolute; }
+.connectors:after {
+  content: '';
+  width: 44px;
+  height: 44px;
+  background: transparent url(../images/ui-icon-diamond-red-stroke.svg) no-repeat center center;
+  -webkit-background-size: 44px 44px;
+  -moz-background-size: 44px 44px;
+  -o-background-size: 44px 44px;
+  background-size: 44px 44px;
+  display: block;
+  position: absolute; }
+.connectors#connector-1 {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%); }
+  .connectors#connector-1:before {
+    top: -22px;
+    left: -13px; }
+  .connectors#connector-1:after {
+    bottom: -22px;
+    right: -13px; }
+.connectors#connector-1-white {
+  position: absolute;
+  height: 35vw;
+  top: -5vw;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: -1;
+  opacity: 0.5; }
+  .connectors#connector-1-white:before {
+    display: none; }
+  .connectors#connector-1-white:after {
+    display: none; }
+.connectors#connector-2 {
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  top: 0;
+  height: 100%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%); }
+  .connectors#connector-2:before {
+    right: -13px;
+    top: -23px; }
+  .connectors#connector-2:after {
+    left: -13px;
+    bottom: -22px; }
+
+body.show-tour-experience {
+  overflow: hidden; }
+
+.clock-svg .hands {
+  opacity: 0;
+  -webkit-transition: 0.15s ease-in-out;
+  -moz-transition: 0.15s ease-in-out;
+  transition: 0.15s ease-in-out; }
+
+#tour-experience-overlay {
+  position: fixed;
+  top: 0;
+  left: 100vw;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: white;
+  z-index: 10000;
+  -webkit-transition: 0.15s ease-in-out;
+  -moz-transition: 0.15s ease-in-out;
+  transition: 0.15s ease-in-out; }
+  #tour-experience-overlay #tour-back-btn {
+    color: white;
+    text-decoration: none;
+    font-family: "franklin-gothic-urw-comp", Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    z-index: 1000;
+    position: absolute;
+    top: -60px;
+    left: 90px;
+    -webkit-transition: 0.15s ease-in-out 1s;
+    -moz-transition: 0.15s ease-in-out 1s;
+    transition: 0.15s ease-in-out 1s; }
+    #tour-experience-overlay #tour-back-btn:before {
+      content: '';
+      background: url(../images/ui-icon-chevron-left-white.svg) no-repeat center center;
+      height: 20px;
+      width: 20px;
+      display: block;
+      position: absolute;
+      background-size: auto 100%;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+      left: -40px;
+      -webkit-transition: 0.15s ease-in-out;
+      -moz-transition: 0.15s ease-in-out;
+      transition: 0.15s ease-in-out; }
+  #tour-experience-overlay header {
+    height: 100vh;
+    position: absolute;
+    width: 100vw;
+    z-index: 10;
+    background: #252120 url(../images/bg-tour-intro-texture.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
+    #tour-experience-overlay header div#tour-intro-title {
+      z-index: 100;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      opacity: 0;
+      width: 100%;
+      -webkit-transition: 1s ease-in-out 0.5s;
+      -moz-transition: 1s ease-in-out 0.5s;
+      transition: 1s ease-in-out 0.5s;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%); }
+      #tour-experience-overlay header div#tour-intro-title img#the-tour-logo {
+        width: 185px;
+        height: auto;
+        position: absolute;
+        left: 50%;
+        margin-left: -440px;
+        margin-top: 70px;
+        z-index: 10;
+        opacity: 0;
+        -webkit-transition: 0.3s ease-in-out 0.5s;
+        -moz-transition: 0.3s ease-in-out 0.5s;
+        transition: 0.3s ease-in-out 0.5s; }
+      #tour-experience-overlay header div#tour-intro-title img#experience-stencil {
+        width: 700px;
+        left: 50%;
+        margin-left: -350px;
+        height: auto;
+        z-index: 100;
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        -webkit-transform: scale(0.9);
+        -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -o-transform: scale(0.9);
+        transform: scale(0.9);
+        -webkit-transition: 0.3s ease-in-out 0.5s;
+        -moz-transition: 0.3s ease-in-out 0.5s;
+        transition: 0.3s ease-in-out 0.5s; }
+      #tour-experience-overlay header div#tour-intro-title span {
+        position: absolute;
+        display: block;
+        left: 50%;
+        top: 50%;
+        margin-top: 100px;
+        opacity: 0;
+        color: white;
+        font-family: "franklin-gothic-urw-comp", Arial, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        -webkit-transition: 1s ease-in-out 1s;
+        -moz-transition: 1s ease-in-out 1s;
+        transition: 1s ease-in-out 1s;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%); }
+    #tour-experience-overlay header #tour-intro-photo {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+      height: 100%;
+      background: #252120 url(../images/bg-tour-intro-photo.jpg) no-repeat center center;
+      -webkit-transition: 0.3s ease-in-out 0.3s;
+      -moz-transition: 0.3s ease-in-out 0.3s;
+      transition: 0.3s ease-in-out 0.3s;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
+    #tour-experience-overlay header .clock {
+      top: 50%;
+      margin-top: 320px;
+      left: 50%;
+      margin-left: 160px;
+      opacity: 0;
+      -webkit-transition: 0.5s ease-in-out 0.8s;
+      -moz-transition: 0.5s ease-in-out 0.8s;
+      transition: 0.5s ease-in-out 0.8s;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%); }
+      #tour-experience-overlay header .clock span.clock-face {
+        -webkit-transition: 0.15s ease-in-out;
+        -moz-transition: 0.15s ease-in-out;
+        transition: 0.15s ease-in-out; }
+        #tour-experience-overlay header .clock span.clock-face svg .fill-me {
+          fill: white; }
+        #tour-experience-overlay header .clock span.clock-face svg #time-800 {
+          opacity: 1; }
+      #tour-experience-overlay header .clock span.clock-cta {
+        opacity: 0;
+        position: relative;
+        left: -15px;
+        -webkit-transition: 0.5s ease-in-out 1.3s;
+        -moz-transition: 0.5s ease-in-out 1.3s;
+        transition: 0.5s ease-in-out 1.3s; }
+  #tour-experience-overlay.begin {
+    left: 0; }
+    #tour-experience-overlay.begin #tour-back-btn {
+      top: 50px; }
+    #tour-experience-overlay.begin div#tour-intro-title {
+      opacity: 1;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%); }
+      #tour-experience-overlay.begin div#tour-intro-title img#the-tour-logo {
+        margin-top: -70px;
+        opacity: 1; }
+      #tour-experience-overlay.begin div#tour-intro-title img#experience-stencil {
+        top: 0;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+        opacity: 1; }
+      #tour-experience-overlay.begin div#tour-intro-title span {
+        opacity: 1; }
+    #tour-experience-overlay.begin .clock {
+      margin-top: 260px;
+      opacity: 1; }
+      #tour-experience-overlay.begin .clock .clock-cta {
+        opacity: 1;
+        left: 0; }
+    #tour-experience-overlay.begin #tour-intro-photo {
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+      filter: grayscale(100%);
+      opacity: 0.05; }
+  #tour-experience-overlay.initiated #tour-back-btn {
+    -webkit-transition: 0.15s ease-in-out;
+    -moz-transition: 0.15s ease-in-out;
+    transition: 0.15s ease-in-out;
+    color: #212121; }
+    #tour-experience-overlay.initiated #tour-back-btn:before {
+      background: url(../images/ui-icon-chevron-left-black.svg) no-repeat center center; }
+    #tour-experience-overlay.initiated #tour-back-btn.white {
+      color: white; }
+      #tour-experience-overlay.initiated #tour-back-btn.white:before {
+        background: url(../images/ui-icon-chevron-left-white.svg) no-repeat center center; }
+  #tour-experience-overlay.initiated nav {
+    bottom: 0; }
+  #tour-experience-overlay.initiated article {
+    z-index: 100;
+    visibility: visible; }
+  #tour-experience-overlay.time-930 #tour-back-btn {
+    color: #212121 !important; }
+    #tour-experience-overlay.time-930 #tour-back-btn:before {
+      background: url(../images/ui-icon-chevron-left-black.svg) no-repeat center center !important; }
+  #tour-experience-overlay .clock {
+    color: white;
+    text-decoration: none;
+    font-family: "franklin-gothic-urw-comp", Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    padding-left: 160px;
+    letter-spacing: 0.15em;
+    z-index: 100; }
+    #tour-experience-overlay .clock span.clock-face {
+      width: 140px;
+      height: 140px;
+      display: block;
+      top: -50px;
+      left: 0;
+      position: absolute;
+      -webkit-transition: 0.15s ease-in-out;
+      -moz-transition: 0.15s ease-in-out;
+      transition: 0.15s ease-in-out; }
+    #tour-experience-overlay .clock:hover span.clock-face {
+      -webkit-transform: scale(1.05);
+      -moz-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      -o-transform: scale(1.05);
+      transform: scale(1.05); }
+  #tour-experience-overlay article {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    overflow: hidden;
+    visibility: hidden; }
+    #tour-experience-overlay article .time-slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      visibility: hidden;
+      height: 100vh;
+      z-index: 10; }
+      #tour-experience-overlay article .time-slide .clock {
+        margin-top: 70px;
+        -webkit-transition: 0.15s ease-in-out 0.3s;
+        -moz-transition: 0.15s ease-in-out 0.3s;
+        transition: 0.15s ease-in-out 0.3s; }
+      #tour-experience-overlay article .time-slide.current {
+        opacity: 1;
+        visibility: visible; }
+      #tour-experience-overlay article .time-slide.text-right .details {
+        right: 0; }
+        #tour-experience-overlay article .time-slide.text-right .details div {
+          padding-left: 10vw; }
+      #tour-experience-overlay article .time-slide.text-right .background img {
+        -webkit-transform-origin: bottom 25%;
+        -moz-transform-origin: bottom 25%;
+        -ms-transform-origin: bottom 25%;
+        -o-transform-origin: bottom 25%;
+        transform-origin: bottom 25%; }
+      #tour-experience-overlay article .time-slide.text-left .details {
+        left: 0; }
+      #tour-experience-overlay article .time-slide.text-left .clock {
+        left: 5vw; }
+      #tour-experience-overlay article .time-slide.text-left .background img {
+        -webkit-transform-origin: bottom 75%;
+        -moz-transform-origin: bottom 75%;
+        -ms-transform-origin: bottom 75%;
+        -o-transform-origin: bottom 75%;
+        transform-origin: bottom 75%; }
+      #tour-experience-overlay article .time-slide.photo-full .details {
+        color: white; }
+      #tour-experience-overlay article .time-slide.photo-full .clock {
+        color: white; }
+        #tour-experience-overlay article .time-slide.photo-full .clock:before {
+          background: url(../images/ui-tour-default-clock-white.svg) no-repeat center center; }
+      #tour-experience-overlay article .time-slide.photo-full .background img {
+        -webkit-transform-origin: 50% 50%;
+        -moz-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+        -o-transform-origin: 50% 50%;
+        transform-origin: 50% 50%; }
+      #tour-experience-overlay article .time-slide.white-fill {
+        color: black; }
+        #tour-experience-overlay article .time-slide.white-fill .details {
+          background: white; }
+          #tour-experience-overlay article .time-slide.white-fill .details div {
+            color: #212121; }
+            #tour-experience-overlay article .time-slide.white-fill .details div .clock {
+              color: #212121; }
+      #tour-experience-overlay article .time-slide .bumper {
+        z-index: 200;
+        position: absolute !important;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        left: 100vw;
+        background: #252120 url(../images/bg-tour-intro-texture.jpg) no-repeat center center !important;
+        -webkit-background-size: cover !important;
+        -moz-background-size: cover !important;
+        -o-background-size: cover !important;
+        background-size: cover !important;
+        visibility: hidden;
+        -webkit-transition: 0.3s ease-in-out;
+        -moz-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out; }
+        #tour-experience-overlay article .time-slide .bumper .anystretch {
+          opacity: 0.1; }
+        #tour-experience-overlay article .time-slide .bumper h1 {
+          position: absolute;
+          width: 100%;
+          text-align: center;
+          top: 50%;
+          line-height: 107px;
+          color: white;
+          font-size: 70px;
+          text-transform: uppercase;
+          font-family: "franklin-gothic-urw-comp", Arial, sans-serif;
+          font-weight: bold;
+          letter-spacing: 2px;
+          -webkit-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+          -webkit-transition: 0.15s ease-in-out;
+          -moz-transition: 0.15s ease-in-out;
+          transition: 0.15s ease-in-out;
+          -webkit-filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
+          -moz-filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
+          -ms-filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
+          -o-filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3)); }
+          #tour-experience-overlay article .time-slide .bumper h1 span.stencil-number {
+            display: inline-block;
+            text-indent: -5000px;
+            overflow: hidden;
+            position: relative;
+            height: 107px;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            top: 27px;
+            margin-right: 20px;
+            -webkit-transform: translateY(50px);
+            -moz-transform: translateY(50px);
+            -ms-transform: translateY(50px);
+            -o-transform: translateY(50px);
+            transform: translateY(50px);
+            opacity: 0;
+            -webkit-transition: 0.3s ease-in-out 0.2s;
+            -moz-transition: 0.3s ease-in-out 0.2s;
+            transition: 0.3s ease-in-out 0.2s; }
+          #tour-experience-overlay article .time-slide .bumper h1 span.messaging {
+            opacity: 0;
+            -webkit-transition: 0.3s ease-in-out 0.5s;
+            -moz-transition: 0.3s ease-in-out 0.5s;
+            transition: 0.3s ease-in-out 0.5s; }
+      #tour-experience-overlay article .time-slide .details {
+        width: 50vw;
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        z-index: 100; }
+        #tour-experience-overlay article .time-slide .details div {
+          position: absolute;
+          color: white;
+          top: 50%;
+          width: 100%;
+          margin-top: -50px;
+          -webkit-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+          padding: 5vw; }
+          #tour-experience-overlay article .time-slide .details div p {
+            margin-right: 6vw;
+            font-size: 24px;
+            line-height: 1.5em;
+            max-width: 600px;
+            position: relative; }
+      #tour-experience-overlay article .time-slide .background {
+        position: absolute !important;
+        top: 0;
+        height: 100vh;
+        z-index: 10;
+        opacity: 0;
+        left: 0;
+        width: 100vw;
+        -webkit-transition: 0.15s ease-in-out 0.3s;
+        -moz-transition: 0.15s ease-in-out 0.3s;
+        transition: 0.15s ease-in-out 0.3s; }
+        #tour-experience-overlay article .time-slide .background img {
+          -webkit-transform: scale(1.15);
+          -moz-transform: scale(1.15);
+          -ms-transform: scale(1.15);
+          -o-transform: scale(1.15);
+          transform: scale(1.15);
+          -webkit-transition: 1s linear;
+          -moz-transition: 1s linear;
+          transition: 1s linear; }
+      #tour-experience-overlay article .time-slide#slide-800 .bumper h1 span.stencil-number {
+        background: url(../images/stencil-tour-800.svg) no-repeat center center;
+        width: 250px; }
+      #tour-experience-overlay article .time-slide#slide-800 .clock svg #time-800 {
+        opacity: 1; }
+      #tour-experience-overlay article .time-slide#slide-800 .clock:hover svg #time-800 {
+        opacity: 0; }
+      #tour-experience-overlay article .time-slide#slide-800 .clock:hover svg #time-900 {
+        opacity: 1; }
+      #tour-experience-overlay article .time-slide#slide-900 .bumper h1 span.stencil-number {
+        background: url(../images/stencil-tour-900.svg) no-repeat center center;
+        width: 249px; }
+      #tour-experience-overlay article .time-slide#slide-900 .clock svg #time-900 {
+        opacity: 1; }
+      #tour-experience-overlay article .time-slide#slide-900 .clock:hover svg #time-900 {
+        opacity: 0; }
+      #tour-experience-overlay article .time-slide#slide-900 .clock:hover svg #time-920 {
+        opacity: 1; }
+      #tour-experience-overlay article .time-slide#slide-920 .bumper h1 span.stencil-number {
+        background: url(../images/stencil-tour-920.svg) no-repeat center center;
+        width: 245px; }
+      #tour-experience-overlay article .time-slide#slide-920 .clock svg .fill-me {
+        fill: white; }
+      #tour-experience-overlay article .time-slide#slide-920 .clock svg #time-920 {
+        opacity: 1; }
+      #tour-experience-overlay article .time-slide#slide-920 .clock:hover svg #time-920 {
+        opacity: 0; }
+      #tour-experience-overlay article .time-slide#slide-920 .clock:hover svg #time-930 {
+        opacity: 1; }
+      #tour-experience-overlay article .time-slide#slide-930 .bumper h1 span.stencil-number {
+        background: url(../images/stencil-tour-930.svg) no-repeat center center;
+        width: 250px; }
+      #tour-experience-overlay article .time-slide#slide-930 .clock svg #time-930 {
+        opacity: 1; }
+      #tour-experience-overlay article .time-slide#slide-930 .clock:hover svg #time-930 {
+        opacity: 0; }
+      #tour-experience-overlay article .time-slide#slide-930 .clock:hover svg #time-945 {
+        opacity: 1; }
+      #tour-experience-overlay article .time-slide#slide-945 .bumper h1 span.stencil-number {
+        background: url(../images/stencil-tour-945.svg) no-repeat center center;
+        width: 247px; }
+      #tour-experience-overlay article .time-slide#slide-945 .clock svg #time-945 {
+        opacity: 1; }
+      #tour-experience-overlay article .time-slide#slide-945 .clock:hover svg #time-945 {
+        opacity: 0; }
+      #tour-experience-overlay article .time-slide#slide-945 .clock:hover svg #time-955 {
+        opacity: 1; }
+      #tour-experience-overlay article .time-slide#slide-955 .bumper h1 span.stencil-number {
+        background: url(../images/stencil-tour-955.svg) no-repeat center center;
+        width: 246px; }
+      #tour-experience-overlay article .time-slide#slide-955 .clock svg .fill-me {
+        fill: white; }
+      #tour-experience-overlay article .time-slide#slide-955 .clock svg #time-955 {
+        opacity: 1; }
+      #tour-experience-overlay article .time-slide#slide-955 .clock:hover svg #time-955 {
+        opacity: 0; }
+      #tour-experience-overlay article .time-slide#slide-955 .clock:hover svg #time-1000 {
+        opacity: 1; }
+      #tour-experience-overlay article .time-slide#slide-1000 .bumper h1 span.stencil-number {
+        background: url(../images/stencil-tour-1000.svg) no-repeat center center;
+        width: 305px; }
+      #tour-experience-overlay article .time-slide#slide-1000 .clock svg #time-1000 {
+        opacity: 1; }
+      #tour-experience-overlay article .time-slide#slide-1000 .clock:hover svg #time-1000 {
+        opacity: 0; }
+      #tour-experience-overlay article .time-slide#slide-1000 .clock:hover svg #time-1100 {
+        opacity: 1; }
+      #tour-experience-overlay article .time-slide#slide-1100 .bumper h1 span.stencil-number {
+        background: url(../images/stencil-tour-1100.svg) no-repeat center center;
+        width: 286px; }
+      #tour-experience-overlay article .time-slide#slide-1100 .clock {
+        margin-top: 80px;
+        left: 0;
+        position: relative;
+        clear: both;
+        float: left; }
+        #tour-experience-overlay article .time-slide#slide-1100 .clock svg #time-1100 {
+          opacity: 1; }
+        #tour-experience-overlay article .time-slide#slide-1100 .clock:hover svg #time-1100 {
+          opacity: 0; }
+        #tour-experience-overlay article .time-slide#slide-1100 .clock:hover svg #time-800 {
+          opacity: 1; }
+      #tour-experience-overlay article .time-slide.active {
+        opacity: 1;
+        z-index: 100;
+        visibility: visible; }
+        #tour-experience-overlay article .time-slide.active .background {
+          opacity: 1; }
+    #tour-experience-overlay article.loaded {
+      background: white; }
+      #tour-experience-overlay article.loaded .time-slide.active .bumper {
+        left: 100vw;
+        visibility: hidden; }
+        #tour-experience-overlay article.loaded .time-slide.active .bumper .anystretch {
+          position: fixed !important;
+          opacity: 0;
+          -webkit-transition: 0.15s ease-in-out 0.3s;
+          -moz-transition: 0.15s ease-in-out 0.3s;
+          transition: 0.15s ease-in-out 0.3s; }
+        #tour-experience-overlay article.loaded .time-slide.active .bumper h1 .stencil-number {
+          -webkit-transform: translateY(100px);
+          -moz-transform: translateY(100px);
+          -ms-transform: translateY(100px);
+          -o-transform: translateY(100px);
+          transform: translateY(100px);
+          opacity: 0; }
+        #tour-experience-overlay article.loaded .time-slide.active .bumper h1 .messaing {
+          opacity: 0; }
+      #tour-experience-overlay article.loaded .time-slide.active .background img {
+        -webkit-transform: scale(1.15);
+        -moz-transform: scale(1.15);
+        -ms-transform: scale(1.15);
+        -o-transform: scale(1.15);
+        transform: scale(1.15);
+        -webkit-transition: 30s ease-out;
+        -moz-transition: 30s ease-out;
+        transition: 30s ease-out; }
+    #tour-experience-overlay article.started {
+      background: white; }
+  #tour-experience-overlay.loading .time-slide.active .bumper {
+    visibility: visible;
+    left: 0; }
+    #tour-experience-overlay.loading .time-slide.active .bumper h1 span.stencil-number {
+      opacity: 1;
+      -webkit-transform: translateY(0px);
+      -moz-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+      -o-transform: translateY(0px);
+      transform: translateY(0px); }
+    #tour-experience-overlay.loading .time-slide.active .bumper h1 span.messaging {
+      opacity: 1; }
+  #tour-experience-overlay.loading .time-slide.active .background img {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1); }
+  #tour-experience-overlay.loading .details {
+    opacity: 0;
+    -webkit-transition: 0.15s ease-in-out 0.3s;
+    -moz-transition: 0.15s ease-in-out 0.3s;
+    transition: 0.15s ease-in-out 0.3s; }
+  #tour-experience-overlay.loading nav {
+    bottom: -100px; }
+    #tour-experience-overlay.loading nav ul li {
+      top: 100px; }
+  #tour-experience-overlay.loading .background {
+    opacity: 1; }
+  #tour-experience-overlay.loading #tour-back-btn {
+    top: -60px; }
+  #tour-experience-overlay.time-1100 nav .cta {
+    opacity: 0; }
+  #tour-experience-overlay nav {
+    position: absolute;
+    bottom: -100px;
+    background: white;
+    z-index: 100;
+    height: 100px;
+    left: 0;
+    opacity: 1;
+    width: 100vw;
+    -webkit-transition: 0.15s ease-in-out 0.3s;
+    -moz-transition: 0.15s ease-in-out 0.3s;
+    transition: 0.15s ease-in-out 0.3s; }
+    #tour-experience-overlay nav ul {
+      list-style: none;
+      left: 90px;
+      position: absolute;
+      bottom: 0; }
+      #tour-experience-overlay nav ul li {
+        float: left;
+        top: 0;
+        position: relative; }
+        #tour-experience-overlay nav ul li:nth-child(1) {
+          -webkit-transition: 0.15s ease-in-out 0.15s;
+          -moz-transition: 0.15s ease-in-out 0.15s;
+          transition: 0.15s ease-in-out 0.15s; }
+        #tour-experience-overlay nav ul li:nth-child(2) {
+          -webkit-transition: 0.15s ease-in-out 0.2s;
+          -moz-transition: 0.15s ease-in-out 0.2s;
+          transition: 0.15s ease-in-out 0.2s; }
+        #tour-experience-overlay nav ul li:nth-child(3) {
+          -webkit-transition: 0.15s ease-in-out 0.25s;
+          -moz-transition: 0.15s ease-in-out 0.25s;
+          transition: 0.15s ease-in-out 0.25s; }
+        #tour-experience-overlay nav ul li:nth-child(4) {
+          -webkit-transition: 0.15s ease-in-out 0.3s;
+          -moz-transition: 0.15s ease-in-out 0.3s;
+          transition: 0.15s ease-in-out 0.3s; }
+        #tour-experience-overlay nav ul li:nth-child(5) {
+          -webkit-transition: 0.15s ease-in-out 0.35s;
+          -moz-transition: 0.15s ease-in-out 0.35s;
+          transition: 0.15s ease-in-out 0.35s; }
+        #tour-experience-overlay nav ul li:nth-child(6) {
+          -webkit-transition: 0.15s ease-in-out 0.4s;
+          -moz-transition: 0.15s ease-in-out 0.4s;
+          transition: 0.15s ease-in-out 0.4s; }
+        #tour-experience-overlay nav ul li:nth-child(7) {
+          -webkit-transition: 0.15s ease-in-out 0.45s;
+          -moz-transition: 0.15s ease-in-out 0.45s;
+          transition: 0.15s ease-in-out 0.45s; }
+        #tour-experience-overlay nav ul li:nth-child(8) {
+          -webkit-transition: 0.15s ease-in-out 0.5s;
+          -moz-transition: 0.15s ease-in-out 0.5s;
+          transition: 0.15s ease-in-out 0.5s; }
+        #tour-experience-overlay nav ul li a {
+          color: #212121;
+          display: block;
+          opacity: 0.5;
+          position: relative;
+          padding: 0 40px 40px 20px;
+          border-left: 2px solid #212121;
+          font-weight: bold;
+          font-family: "franklin-gothic-urw-comp", Arial, sans-serif;
+          -webkit-transition: 0.15s ease-in-out;
+          -moz-transition: 0.15s ease-in-out;
+          transition: 0.15s ease-in-out; }
+          #tour-experience-overlay nav ul li a:hover {
+            text-decoration: none;
+            opacity: 1; }
+          #tour-experience-overlay nav ul li a.active {
+            opacity: 1; }
+        #tour-experience-overlay nav ul li.thick-border a {
+          border-left-width: 4px; }
+    #tour-experience-overlay nav .cta {
+      right: 90px;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+      -webkit-transition: opacity 0.15s ease-in-out 0.3s;
+      -moz-transition: opacity 0.15s ease-in-out 0.3s;
+      transition: opacity 0.15s ease-in-out 0.3s; }

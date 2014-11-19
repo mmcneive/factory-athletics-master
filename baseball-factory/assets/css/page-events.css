@@ -1,0 +1,1321 @@
+#events, #events aside[role="complimentary"], #events aside[role="complimentary"] #filters, #events aside[role="complimentary"] #filters #tabs, #events aside[role="complimentary"] #callout, #events article[role="main"], section#tour-experience, section#tour-experience #mosaic, #tour-experience-overlay nav ul, #tour-experience-overlay nav ul li {
+  *zoom: 1; }
+  #events:before, #events aside[role="complimentary"]:before, #events aside[role="complimentary"] #filters:before, #events aside[role="complimentary"] #filters #tabs:before, #events aside[role="complimentary"] #callout:before, #events article[role="main"]:before, section#tour-experience:before, section#tour-experience #mosaic:before, #tour-experience-overlay nav ul:before, #tour-experience-overlay nav ul li:before, #events:after, #events aside[role="complimentary"]:after, #events aside[role="complimentary"] #filters:after, #events aside[role="complimentary"] #filters #tabs:after, #events aside[role="complimentary"] #callout:after, #events article[role="main"]:after, section#tour-experience:after, section#tour-experience #mosaic:after, #tour-experience-overlay nav ul:after, #tour-experience-overlay nav ul li:after {
+    content: " ";
+    display: table; }
+  #events:after, #events aside[role="complimentary"]:after, #events aside[role="complimentary"] #filters:after, #events aside[role="complimentary"] #filters #tabs:after, #events aside[role="complimentary"] #callout:after, #events article[role="main"]:after, section#tour-experience:after, section#tour-experience #mosaic:after, #tour-experience-overlay nav ul:after, #tour-experience-overlay nav ul li:after {
+    clear: both; }
+
+
+header #login-background {
+  fill: #051202 !important; }
+
+.toggle-nav.scroll {
+  position: absolute !important;
+  top: 100vh !important;
+  -webkit-transform: translateY(-57px);
+  -moz-transform: translateY(-57px);
+  -ms-transform: translateY(-57px);
+  -o-transform: translateY(-57px);
+  transform: translateY(-57px); }
+.toggle-nav.joined {
+  top: 30px !important;
+  /*&:before{
+			content: '';
+			display: block;
+			background: black;
+			width: 83px;
+			height: 83px;
+			left: -20px;
+			top: -30px;
+			position: absolute;
+			@include transition($fast $ease);
+		}*/ }
+
+nav#secondary {
+  padding-left: 65px !important; }
+  nav#secondary.squeeze {
+    padding-left: 125px !important; }
+
+.show-nav nav#calendar.stuck {
+  -webkit-transform: translateY(-95px);
+  -moz-transform: translateY(-95px);
+  -ms-transform: translateY(-95px);
+  -o-transform: translateY(-95px);
+  transform: translateY(-95px);
+  -webkit-transition: 0.15s ease-in-out;
+  -moz-transition: 0.15s ease-in-out;
+  transition: 0.15s ease-in-out; }
+.show-nav #hero.events .intro {
+  margin-left: 25vw; }
+.show-nav #callout.stuck {
+  left: 25vw !important;
+  margin-left: 65px;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out; }
+
+#hero.events {
+  background: url(../images/bg-events.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  color: #fff; }
+  #hero.events .intro {
+    position: fixed;
+    width: 50%;
+    top: 50%;
+    left: 25%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: margin-left 0.3s ease-in-out;
+    -moz-transition: margin-left 0.3s ease-in-out;
+    transition: margin-left 0.3s ease-in-out;
+    line-height: 1.5; }
+    #hero.events .intro ul {
+      margin: 60px 0 0;
+      list-style: none; }
+    #hero.events .intro li {
+      float: left; }
+      #hero.events .intro li a {
+        display: block;
+        background: #e60e0f;
+        color: #fff;
+        line-height: 58px;
+        padding: 0 30px; }
+        #hero.events .intro li a:hover {
+          text-decoration: none; }
+      #hero.events .intro li:first-child a {
+        background: #051202;
+        margin: 0 25px 0 0; }
+
+#dimmer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  z-index: 100;
+  cursor: pointer; }
+
+#events {
+  background: #fff;
+  position: relative; }
+  #events aside[role="complimentary"] {
+    width: 25%;
+    float: left;
+    position: absolute;
+    left: 65px;
+    height: 100%;
+    padding: 103.33333px 0 0 0; }
+    #events aside[role="complimentary"] #filters #tabs {
+      border: 2px solid #c6c6c6;
+      border-radius: 3px;
+      z-index: 2;
+      margin-bottom: 30px; }
+      #events aside[role="complimentary"] #filters #tabs a {
+        width: 50%;
+        display: block;
+        float: left;
+        text-align: center;
+        color: #c6c6c6;
+        border-radius: 3px;
+        padding: 5px 0;
+        border: 2px white solid; }
+        #events aside[role="complimentary"] #filters #tabs a:hover {
+          background: #c6c6c6;
+          color: white;
+          text-decoration: none; }
+        #events aside[role="complimentary"] #filters #tabs a.active {
+          background-color: #c6191a;
+          color: white;
+          cursor: default; }
+    #events aside[role="complimentary"] #filters .minict_wrapper:last-child {
+      margin-top: 70px;
+      -webkit-transition: 0.15s ease-in-out;
+      -moz-transition: 0.15s ease-in-out;
+      transition: 0.15s ease-in-out; }
+    #events aside[role="complimentary"] #filters.stuck {
+      position: fixed;
+      top: 130px;
+      z-index: 100;
+      width: 28%; }
+      #events aside[role="complimentary"] #filters.stuck .minict_wrapper:last-child {
+        margin-top: 0; }
+    #events aside[role="complimentary"] #filters.passed {
+      position: absolute;
+      top: auto;
+      width: 100%; }
+      #events aside[role="complimentary"] #filters.passed .minict_wrapper:last-child {
+        margin-top: 0; }
+    #events aside[role="complimentary"] #callout {
+      position: absolute;
+      top: 50%;
+      width: 90%;
+      z-index: 90;
+      color: #fff;
+      background: #31bef1 url(../images/bg-events-sidebar-promo.png) no-repeat left center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
+      #events aside[role="complimentary"] #callout h2 {
+        margin: 40px; }
+      #events aside[role="complimentary"] #callout ul {
+        list-style: none;
+        margin: 40px 40px 0; }
+        #events aside[role="complimentary"] #callout ul li {
+          clear: both;
+          float: left;
+          margin-bottom: 40px; }
+          #events aside[role="complimentary"] #callout ul li img {
+            height: 35px;
+            width: auto;
+            float: left; }
+          #events aside[role="complimentary"] #callout ul li p {
+            margin: 0;
+            float: left;
+            clear: both;
+            padding: 0;
+            line-height: 1.4;
+            text-transform: uppercase;
+            font-family: "franklin-gothic-urw-comp", Arial, sans-serif; }
+      #events aside[role="complimentary"] #callout span#open-btn {
+        clear: both;
+        float: left;
+        display: block;
+        color: white;
+        padding-left: 40px;
+        padding-right: 100px;
+        margin-bottom: 40px;
+        text-transform: none;
+        letter-spacing: 0;
+        font-weight: normal;
+        line-height: 1;
+        position: relative;
+        font-size: 20px;
+        width: 100%;
+        z-index: 100; }
+        #events aside[role="complimentary"] #callout span#open-btn:after {
+          content: '';
+          height: 20px;
+          background: url(../images/ui-icon-chevron-right-white.svg) no-repeat center center;
+          width: 20px;
+          display: block;
+          position: absolute;
+          background-size: auto 100%;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+          right: 40px;
+          -webkit-transition: 0.15s ease-in-out;
+          -moz-transition: 0.15s ease-in-out;
+          transition: 0.15s ease-in-out; }
+        #events aside[role="complimentary"] #callout span#open-btn:hover {
+          text-decoration: none; }
+      #events aside[role="complimentary"] #callout.stuck {
+        position: fixed;
+        left: 65px;
+        width: 22.5%; }
+      #events aside[role="complimentary"] #callout.passed {
+        top: auto;
+        bottom: 40px;
+        position: absolute; }
+      #events aside[role="complimentary"] #callout #more {
+        display: none;
+        z-index: 100; }
+      #events aside[role="complimentary"] #callout.hovered {
+        background-color: black;
+        z-index: 200; }
+        #events aside[role="complimentary"] #callout.hovered #more {
+          display: block;
+          position: absolute;
+          height: 100%;
+          left: 100%;
+          width: 170%;
+          background: white url(../images/bg-events-sidebar-callout-trophy.png) no-repeat 130% bottom;
+          top: 0;
+          color: black;
+          padding: 40px; }
+          #events aside[role="complimentary"] #callout.hovered #more h3 {
+            font-size: 40px;
+            padding-right: 80px; }
+            #events aside[role="complimentary"] #callout.hovered #more h3 strong {
+              font-weight: bold; }
+          #events aside[role="complimentary"] #callout.hovered #more h4 {
+            font-weight: bold;
+            color: #6d6d6d;
+            margin-top: 40px; }
+          #events aside[role="complimentary"] #callout.hovered #more p {
+            color: #6d6d6d;
+            margin-right: 160px; }
+          #events aside[role="complimentary"] #callout.hovered #more a {
+            color: #6d6d6d;
+            text-decoration: underline; }
+        #events aside[role="complimentary"] #callout.hovered a:after {
+          right: 20px; }
+  #events article[role="main"] {
+    float: right;
+    width: 65%;
+    z-index: 20;
+    padding-top: 190px; }
+    #events article[role="main"] nav#calendar {
+      position: absolute;
+      top: 80px;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      text-align: center;
+      height: 89px;
+      background: white;
+      -webkit-transition: box-shadow 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out 0.3s;
+      -moz-transition: box-shadow 0.15s ease-in-out, -moz-transform 0.15s ease-in-out 0.3s;
+      transition: box-shadow 0.15s ease-in-out, transform 0.15s ease-in-out 0.3s; }
+      #events article[role="main"] nav#calendar ul {
+        border: 1px solid #dadada;
+        border-left: none;
+        border-right: none;
+        position: absolute;
+        list-style: none;
+        right: 65px;
+        height: 90px;
+        width: 100%; }
+        #events article[role="main"] nav#calendar ul li {
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+          position: absolute;
+          -webkit-transition: 0.15s ease-in-out;
+          -moz-transition: 0.15s ease-in-out;
+          transition: 0.15s ease-in-out; }
+          #events article[role="main"] nav#calendar ul li#prev-month {
+            left: 0;
+            text-indent: 70px;
+            z-index: 100; }
+            #events article[role="main"] nav#calendar ul li#prev-month a:before {
+              content: '';
+              background: #f5f5f5 url(../images/ui-icon-chevron-left-grey.svg) no-repeat center center;
+              background-size: 13px auto;
+              width: 53px;
+              height: 53px;
+              position: absolute;
+              display: block;
+              top: 50%;
+              margin-top: -27px;
+              border-radius: 40px;
+              -webkit-transition: 0.15s ease-in-out;
+              -moz-transition: 0.15s ease-in-out;
+              transition: 0.15s ease-in-out; }
+            #events article[role="main"] nav#calendar ul li#prev-month:hover {
+              text-indent: 80px; }
+              #events article[role="main"] nav#calendar ul li#prev-month:hover a:before {
+                background: #dadada url(../images/ui-icon-chevron-left-white.svg) no-repeat center center;
+                background-size: 13px auto; }
+          #events article[role="main"] nav#calendar ul li#next-month {
+            right: 0;
+            z-index: 100;
+            padding-right: 70px; }
+            #events article[role="main"] nav#calendar ul li#next-month a:before {
+              content: '';
+              background: #f5f5f5 url(../images/ui-icon-chevron-right-grey.svg) no-repeat center center;
+              background-size: 13px auto;
+              width: 53px;
+              height: 53px;
+              position: absolute;
+              display: block;
+              top: 50%;
+              right: 0;
+              margin-top: -27px;
+              border-radius: 40px;
+              -webkit-transition: 0.15s;
+              -moz-transition: 0.15s;
+              transition: 0.15s; }
+            #events article[role="main"] nav#calendar ul li#next-month:hover {
+              padding-right: 80px; }
+              #events article[role="main"] nav#calendar ul li#next-month:hover a:before {
+                background: #dadada url(../images/ui-icon-chevron-right-white.svg) no-repeat center center;
+                background-size: 13px auto; }
+          #events article[role="main"] nav#calendar ul li a {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #b1b1b1;
+            letter-spacing: 3px;
+            line-height: 0;
+            font-family: "franklin-gothic-urw-comp", Arial, sans-serif; }
+          #events article[role="main"] nav#calendar ul li#curr-month {
+            width: 100%;
+            text-align: center;
+            z-index: 10; }
+            #events article[role="main"] nav#calendar ul li#curr-month h2 {
+              font-weight: bold;
+              letter-spacing: 2px; }
+      #events article[role="main"] nav#calendar.stuck {
+        position: fixed;
+        top: 0;
+        z-index: 130;
+        -webkit-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.49);
+        -moz-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.49);
+        box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.49);
+        -webkit-transition: box-shadow 0.15s 0.3s ease-in-out, -webkit-transform 0.15s ease-in-out;
+        -moz-transition: box-shadow 0.15s 0.3s ease-in-out, -moz-transform 0.15s ease-in-out;
+        transition: box-shadow 0.15s 0.3s ease-in-out, transform 0.15s ease-in-out; }
+        #events article[role="main"] nav#calendar.stuck ul {
+          border: none;
+          padding: 1px 0; }
+      #events article[role="main"] nav#calendar.passed {
+        top: -108px;
+        -webkit-transition: top 0.15s ease-in-out;
+        -moz-transition: top 0.15s ease-in-out;
+        transition: top 0.15s ease-in-out; }
+    #events article[role="main"] table {
+      width: 100%;
+      border-bottom: 1px solid #dadada;
+      margin: 0 0 40px 0;
+      line-height: 1.2; }
+      #events article[role="main"] table th {
+        font-size: 20px;
+        color: #969696;
+        border-bottom: 1px solid #fff;
+        padding: 30px 0 0; }
+      #events article[role="main"] table td {
+        font-size: 14px;
+        padding: 15px 0;
+        vertical-align: top;
+        border-top: 1px solid #f4f4f4; }
+        #events article[role="main"] table td:nth-child(1) {
+          width: 20%; }
+        #events article[role="main"] table td:nth-child(2) {
+          width: 40%; }
+        #events article[role="main"] table td:nth-child(3) {
+          width: 20%; }
+        #events article[role="main"] table td:nth-child(4) {
+          width: 5%; }
+        #events article[role="main"] table td:nth-child(5) {
+          width: 25%;
+          text-align: right; }
+      #events article[role="main"] table .more-info-btn {
+        padding: 10px;
+        color: white;
+        background: #959595; }
+        #events article[role="main"] table .more-info-btn:hover {
+          text-decoration: none; }
+
+section#tour-experience {
+  clear: both;
+  width: 100%;
+  position: relative;
+  padding-top: 80px; }
+  section#tour-experience #experience-gateway {
+    background: transparent url(../images/bg-events-experiencegateway.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    cursor: pointer;
+    padding: 6vw 100px 6vw 50%; }
+    section#tour-experience #experience-gateway h1 {
+      color: #013a88;
+      font-weight: bold;
+      font-size: 60px; }
+    section#tour-experience #experience-gateway p {
+      color: #808080;
+      max-width: 700px; }
+      section#tour-experience #experience-gateway p strong {
+        color: #525252; }
+  section#tour-experience #mosaic {
+    clear: both;
+    width: 100%;
+    position: relative; }
+    section#tour-experience #mosaic .col {
+      width: 50%; }
+      section#tour-experience #mosaic .col.left {
+        float: left; }
+      section#tour-experience #mosaic .col.right {
+        float: right; }
+    section#tour-experience #mosaic .double {
+      clear: both;
+      width: 100%; }
+    section#tour-experience #mosaic #banner {
+      padding: 15vh 0;
+      height: 0;
+      background: #212121; }
+      section#tour-experience #mosaic #banner a {
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #fff;
+        text-align: center; }
+        section#tour-experience #mosaic #banner a span {
+          z-index: 100;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          -webkit-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+          -webkit-transition: 0.3s ease-in-out;
+          -moz-transition: 0.3s ease-in-out;
+          transition: 0.3s ease-in-out;
+          font-size: 80px;
+          font-weight: bold;
+          line-height: 1; }
+          section#tour-experience #mosaic #banner a span small {
+            z-index: 100;
+            font-size: 16px;
+            display: block;
+            position: relative;
+            line-height: 1.5;
+            letter-spacing: 0.15em;
+            font-weight: normal;
+            padding: 0 50px;
+            text-transform: uppercase; }
+        section#tour-experience #mosaic #banner a:after {
+          content: '';
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          position: absolute;
+          z-index: 1;
+          opacity: 0.5;
+          filter: alpha(opacity=50);
+          background: transparent url(../images/bg-events-12u.jpg) no-repeat center center;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+          -webkit-transition: 0.3s ease-in-out;
+          -moz-transition: 0.3s ease-in-out;
+          transition: 0.3s ease-in-out; }
+        section#tour-experience #mosaic #banner a:hover {
+          text-decoration: none; }
+          section#tour-experience #mosaic #banner a:hover:after {
+            opacity: 0.8;
+            filter: alpha(opacity=80); }
+          section#tour-experience #mosaic #banner a:hover span {
+            -webkit-transform: translateY(-60%);
+            -moz-transform: translateY(-60%);
+            -ms-transform: translateY(-60%);
+            -o-transform: translateY(-60%);
+            transform: translateY(-60%); }
+    section#tour-experience #mosaic #slideshow {
+      padding: 15vh 0;
+      height: 0;
+      background: #212121 url(../images/bg-events-slideshow-01.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
+    section#tour-experience #mosaic #pullquote {
+      background: #1b1b1b;
+      padding: 15vh 0;
+      height: 0; }
+      section#tour-experience #mosaic #pullquote blockquote {
+        color: white;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        left: 0;
+        padding: 0 5vw;
+        letter-spacing: 0.12em;
+        line-height: 1.5;
+        font-size: 28px;
+        text-transform: uppercase;
+        text-align: center; }
+    section#tour-experience #mosaic #featured-event {
+      height: 100%;
+      background: #212121 url(../images/bg-events-featured.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      position: absolute;
+      right: 0; }
+      section#tour-experience #mosaic #featured-event h2 {
+        position: absolute;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        font-size: 18px;
+        top: 60px;
+        left: 60px;
+        font-family: "franklin-gothic-urw-comp", Arial, sans-serif; }
+      section#tour-experience #mosaic #featured-event a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        text-align: center; }
+        section#tour-experience #mosaic #featured-event a span {
+          z-index: 100;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          width: 100%;
+          -webkit-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+          -webkit-transition: 0.3s ease-in-out;
+          -moz-transition: 0.3s ease-in-out;
+          transition: 0.3s ease-in-out;
+          font-size: 80px;
+          font-weight: bold;
+          line-height: 1; }
+          section#tour-experience #mosaic #featured-event a span small {
+            z-index: 100;
+            font-size: 16px;
+            display: block;
+            position: relative;
+            line-height: 1.5;
+            letter-spacing: 0.15em;
+            font-weight: normal;
+            padding: 0 50px;
+            text-transform: uppercase;
+            margin-top: 20px; }
+          section#tour-experience #mosaic #featured-event a span i {
+            height: 20px;
+            width: 20px;
+            background: url(../images/ui-icon-chevron-right-white.svg) no-repeat center center;
+            background-size: auto 100%;
+            position: absolute;
+            right: 60px;
+            top: 50%;
+            -webkit-transform: tranlateY(-50%);
+            -moz-transform: tranlateY(-50%);
+            -ms-transform: tranlateY(-50%);
+            -o-transform: tranlateY(-50%);
+            transform: tranlateY(-50%);
+            -webkit-transition: 0.3s ease-in-out;
+            -moz-transition: 0.3s ease-in-out;
+            transition: 0.3s ease-in-out; }
+        section#tour-experience #mosaic #featured-event a:hover {
+          text-decoration: none; }
+          section#tour-experience #mosaic #featured-event a:hover i {
+            right: 40px; }
+
+section#faqs {
+  padding-top: 80px;
+  padding-bottom: 80px; }
+  section#faqs h1 {
+    border-top: 1px solid #dadada;
+    padding-top: 40px;
+    font-weight: bold; }
+  section#faqs ul {
+    width: 100%;
+    list-style: none;
+    padding: 40px 0 0;
+    margin: 0; }
+    section#faqs ul li {
+      float: left;
+      width: 45%;
+      margin-bottom: 40px;
+      color: #969696; }
+      section#faqs ul li:nth-child(odd) {
+        clear: both;
+        margin-right: 10%; }
+      section#faqs ul li h2 {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.5; }
+      section#faqs ul li p {
+        margin: 0; }
+
+body.show-tour-experience {
+  overflow: hidden; }
+
+.clock-svg .hands {
+  opacity: 0;
+  -webkit-transition: 0.15s ease-in-out;
+  -moz-transition: 0.15s ease-in-out;
+  transition: 0.15s ease-in-out; }
+
+#tour-experience-overlay {
+  position: fixed;
+  top: 0;
+  left: 100vw;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: white;
+  z-index: 10000;
+  -webkit-transition: 0.15s ease-in-out;
+  -moz-transition: 0.15s ease-in-out;
+  transition: 0.15s ease-in-out; }
+  #tour-experience-overlay #tour-back-btn {
+    color: white;
+    text-decoration: none;
+    font-family: "franklin-gothic-urw-comp", Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    z-index: 1000;
+    position: absolute;
+    top: -60px;
+    left: 90px;
+    -webkit-transition: 0.15s ease-in-out 1s;
+    -moz-transition: 0.15s ease-in-out 1s;
+    transition: 0.15s ease-in-out 1s; }
+    #tour-experience-overlay #tour-back-btn:before {
+      content: '';
+      background: url(../images/ui-icon-chevron-left-white.svg) no-repeat center center;
+      height: 20px;
+      width: 20px;
+      display: block;
+      position: absolute;
+      background-size: auto 100%;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+      left: -40px;
+      -webkit-transition: 0.15s ease-in-out;
+      -moz-transition: 0.15s ease-in-out;
+      transition: 0.15s ease-in-out; }
+  #tour-experience-overlay header {
+    height: 100vh;
+    position: absolute;
+    width: 100vw;
+    z-index: 10;
+    background: #252120 url(../images/bg-tour-intro-texture.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
+    #tour-experience-overlay header div#tour-intro-title {
+      z-index: 100;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      opacity: 0;
+      width: 100%;
+      -webkit-transition: 1s ease-in-out 0.5s;
+      -moz-transition: 1s ease-in-out 0.5s;
+      transition: 1s ease-in-out 0.5s;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%); }
+      #tour-experience-overlay header div#tour-intro-title img#the-tour-logo {
+        width: 185px;
+        height: auto;
+        position: absolute;
+        left: 50%;
+        margin-left: -440px;
+        margin-top: 70px;
+        z-index: 10;
+        opacity: 0;
+        -webkit-transition: 0.3s ease-in-out 0.5s;
+        -moz-transition: 0.3s ease-in-out 0.5s;
+        transition: 0.3s ease-in-out 0.5s; }
+      #tour-experience-overlay header div#tour-intro-title img#experience-stencil {
+        width: 700px;
+        left: 50%;
+        margin-left: -350px;
+        height: auto;
+        z-index: 100;
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        -webkit-transform: scale(0.9);
+        -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -o-transform: scale(0.9);
+        transform: scale(0.9);
+        -webkit-transition: 0.3s ease-in-out 0.5s;
+        -moz-transition: 0.3s ease-in-out 0.5s;
+        transition: 0.3s ease-in-out 0.5s; }
+      #tour-experience-overlay header div#tour-intro-title span {
+        position: absolute;
+        display: block;
+        left: 50%;
+        top: 50%;
+        margin-top: 100px;
+        opacity: 0;
+        color: white;
+        font-family: "franklin-gothic-urw-comp", Arial, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        -webkit-transition: 1s ease-in-out 1s;
+        -moz-transition: 1s ease-in-out 1s;
+        transition: 1s ease-in-out 1s;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%); }
+    #tour-experience-overlay header #tour-intro-photo {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+      height: 100%;
+      background: #252120 url(../images/bg-tour-intro-photo.jpg) no-repeat center center;
+      -webkit-transition: 0.3s ease-in-out 0.3s;
+      -moz-transition: 0.3s ease-in-out 0.3s;
+      transition: 0.3s ease-in-out 0.3s;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
+    #tour-experience-overlay header .clock {
+      top: 50%;
+      margin-top: 320px;
+      left: 50%;
+      margin-left: 160px;
+      opacity: 0;
+      -webkit-transition: 0.5s ease-in-out 0.8s;
+      -moz-transition: 0.5s ease-in-out 0.8s;
+      transition: 0.5s ease-in-out 0.8s;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%); }
+      #tour-experience-overlay header .clock span.clock-face {
+        -webkit-transition: 0.15s ease-in-out;
+        -moz-transition: 0.15s ease-in-out;
+        transition: 0.15s ease-in-out; }
+        #tour-experience-overlay header .clock span.clock-face svg .fill-me {
+          fill: white; }
+        #tour-experience-overlay header .clock span.clock-face svg #time-800 {
+          opacity: 1; }
+      #tour-experience-overlay header .clock span.clock-cta {
+        opacity: 0;
+        position: relative;
+        left: -15px;
+        -webkit-transition: 0.5s ease-in-out 1.3s;
+        -moz-transition: 0.5s ease-in-out 1.3s;
+        transition: 0.5s ease-in-out 1.3s; }
+  #tour-experience-overlay.begin {
+    left: 0; }
+    #tour-experience-overlay.begin #tour-back-btn {
+      top: 50px; }
+    #tour-experience-overlay.begin div#tour-intro-title {
+      opacity: 1;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%); }
+      #tour-experience-overlay.begin div#tour-intro-title img#the-tour-logo {
+        margin-top: -70px;
+        opacity: 1; }
+      #tour-experience-overlay.begin div#tour-intro-title img#experience-stencil {
+        top: 0;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+        opacity: 1; }
+      #tour-experience-overlay.begin div#tour-intro-title span {
+        opacity: 1; }
+    #tour-experience-overlay.begin .clock {
+      margin-top: 260px;
+      opacity: 1; }
+      #tour-experience-overlay.begin .clock .clock-cta {
+        opacity: 1;
+        left: 0; }
+    #tour-experience-overlay.begin #tour-intro-photo {
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+      filter: grayscale(100%);
+      opacity: 0.05; }
+  #tour-experience-overlay.initiated #tour-back-btn {
+    -webkit-transition: 0.15s ease-in-out;
+    -moz-transition: 0.15s ease-in-out;
+    transition: 0.15s ease-in-out;
+    color: #212121; }
+    #tour-experience-overlay.initiated #tour-back-btn:before {
+      background: url(../images/ui-icon-chevron-left-black.svg) no-repeat center center; }
+    #tour-experience-overlay.initiated #tour-back-btn.white {
+      color: white; }
+      #tour-experience-overlay.initiated #tour-back-btn.white:before {
+        background: url(../images/ui-icon-chevron-left-white.svg) no-repeat center center; }
+  #tour-experience-overlay.initiated nav {
+    bottom: 0; }
+  #tour-experience-overlay.initiated article {
+    z-index: 100;
+    visibility: visible; }
+  #tour-experience-overlay.time-930 #tour-back-btn {
+    color: #212121 !important; }
+    #tour-experience-overlay.time-930 #tour-back-btn:before {
+      background: url(../images/ui-icon-chevron-left-black.svg) no-repeat center center !important; }
+  #tour-experience-overlay .clock {
+    color: white;
+    text-decoration: none;
+    font-family: "franklin-gothic-urw-comp", Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    padding-left: 160px;
+    letter-spacing: 0.15em;
+    z-index: 100; }
+    #tour-experience-overlay .clock span.clock-face {
+      width: 140px;
+      height: 140px;
+      display: block;
+      top: -50px;
+      left: 0;
+      position: absolute;
+      -webkit-transition: 0.15s ease-in-out;
+      -moz-transition: 0.15s ease-in-out;
+      transition: 0.15s ease-in-out; }
+    #tour-experience-overlay .clock:hover span.clock-face {
+      -webkit-transform: scale(1.05);
+      -moz-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      -o-transform: scale(1.05);
+      transform: scale(1.05); }
+  #tour-experience-overlay article {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    overflow: hidden;
+    visibility: hidden; }
+    #tour-experience-overlay article .time-slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      visibility: hidden;
+      height: 100vh;
+      z-index: 10; }
+      #tour-experience-overlay article .time-slide .clock {
+        margin-top: 70px;
+        -webkit-transition: 0.15s ease-in-out 0.3s;
+        -moz-transition: 0.15s ease-in-out 0.3s;
+        transition: 0.15s ease-in-out 0.3s; }
+      #tour-experience-overlay article .time-slide.current {
+        opacity: 1;
+        visibility: visible; }
+      #tour-experience-overlay article .time-slide.text-right .details {
+        right: 0; }
+        #tour-experience-overlay article .time-slide.text-right .details div {
+          padding-left: 10vw; }
+      #tour-experience-overlay article .time-slide.text-right .background img {
+        -webkit-transform-origin: bottom 25%;
+        -moz-transform-origin: bottom 25%;
+        -ms-transform-origin: bottom 25%;
+        -o-transform-origin: bottom 25%;
+        transform-origin: bottom 25%; }
+      #tour-experience-overlay article .time-slide.text-left .details {
+        left: 0; }
+      #tour-experience-overlay article .time-slide.text-left .clock {
+        left: 5vw; }
+      #tour-experience-overlay article .time-slide.text-left .background img {
+        -webkit-transform-origin: bottom 75%;
+        -moz-transform-origin: bottom 75%;
+        -ms-transform-origin: bottom 75%;
+        -o-transform-origin: bottom 75%;
+        transform-origin: bottom 75%; }
+      #tour-experience-overlay article .time-slide.photo-full .details {
+        color: white; }
+      #tour-experience-overlay article .time-slide.photo-full .clock {
+        color: white; }
+        #tour-experience-overlay article .time-slide.photo-full .clock:before {
+          background: url(../images/ui-tour-default-clock-white.svg) no-repeat center center; }
+      #tour-experience-overlay article .time-slide.photo-full .background img {
+        -webkit-transform-origin: 50% 50%;
+        -moz-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+        -o-transform-origin: 50% 50%;
+        transform-origin: 50% 50%; }
+      #tour-experience-overlay article .time-slide.white-fill {
+        color: black; }
+        #tour-experience-overlay article .time-slide.white-fill .details {
+          background: white; }
+          #tour-experience-overlay article .time-slide.white-fill .details div {
+            color: #212121; }
+            #tour-experience-overlay article .time-slide.white-fill .details div .clock {
+              color: #212121; }
+      #tour-experience-overlay article .time-slide .bumper {
+        z-index: 200;
+        position: absolute !important;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        left: 100vw;
+        background: #252120 url(../images/bg-tour-intro-texture.jpg) no-repeat center center !important;
+        -webkit-background-size: cover !important;
+        -moz-background-size: cover !important;
+        -o-background-size: cover !important;
+        background-size: cover !important;
+        visibility: hidden;
+        -webkit-transition: 0.3s ease-in-out;
+        -moz-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out; }
+        #tour-experience-overlay article .time-slide .bumper .anystretch {
+          opacity: 0.1; }
+        #tour-experience-overlay article .time-slide .bumper h1 {
+          position: absolute;
+          width: 100%;
+          text-align: center;
+          top: 50%;
+          line-height: 107px;
+          color: white;
+          font-size: 70px;
+          text-transform: uppercase;
+          font-family: "franklin-gothic-urw-comp", Arial, sans-serif;
+          font-weight: bold;
+          letter-spacing: 2px;
+          -webkit-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+          -webkit-transition: 0.15s ease-in-out;
+          -moz-transition: 0.15s ease-in-out;
+          transition: 0.15s ease-in-out;
+          -webkit-filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
+          -moz-filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
+          -ms-filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
+          -o-filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3)); }
+          #tour-experience-overlay article .time-slide .bumper h1 span.stencil-number {
+            display: inline-block;
+            text-indent: -5000px;
+            overflow: hidden;
+            position: relative;
+            height: 107px;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            top: 27px;
+            margin-right: 20px;
+            -webkit-transform: translateY(50px);
+            -moz-transform: translateY(50px);
+            -ms-transform: translateY(50px);
+            -o-transform: translateY(50px);
+            transform: translateY(50px);
+            opacity: 0;
+            -webkit-transition: 0.3s ease-in-out 0.2s;
+            -moz-transition: 0.3s ease-in-out 0.2s;
+            transition: 0.3s ease-in-out 0.2s; }
+          #tour-experience-overlay article .time-slide .bumper h1 span.messaging {
+            opacity: 0;
+            -webkit-transition: 0.3s ease-in-out 0.5s;
+            -moz-transition: 0.3s ease-in-out 0.5s;
+            transition: 0.3s ease-in-out 0.5s; }
+      #tour-experience-overlay article .time-slide .details {
+        width: 50vw;
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        z-index: 100; }
+        #tour-experience-overlay article .time-slide .details div {
+          position: absolute;
+          color: white;
+          top: 50%;
+          width: 100%;
+          margin-top: -50px;
+          -webkit-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+          padding: 5vw; }
+          #tour-experience-overlay article .time-slide .details div p {
+            margin-right: 6vw;
+            font-size: 24px;
+            line-height: 1.5em;
+            max-width: 600px;
+            position: relative; }
+      #tour-experience-overlay article .time-slide .background {
+        position: absolute !important;
+        top: 0;
+        height: 100vh;
+        z-index: 10;
+        opacity: 0;
+        left: 0;
+        width: 100vw;
+        -webkit-transition: 0.15s ease-in-out 0.3s;
+        -moz-transition: 0.15s ease-in-out 0.3s;
+        transition: 0.15s ease-in-out 0.3s; }
+        #tour-experience-overlay article .time-slide .background img {
+          -webkit-transform: scale(1.15);
+          -moz-transform: scale(1.15);
+          -ms-transform: scale(1.15);
+          -o-transform: scale(1.15);
+          transform: scale(1.15);
+          -webkit-transition: 1s linear;
+          -moz-transition: 1s linear;
+          transition: 1s linear; }
+      #tour-experience-overlay article .time-slide#slide-800 .bumper h1 span.stencil-number {
+        background: url(../images/stencil-tour-800.svg) no-repeat center center;
+        width: 250px; }
+      #tour-experience-overlay article .time-slide#slide-800 .clock svg #time-800 {
+        opacity: 1; }
+      #tour-experience-overlay article .time-slide#slide-800 .clock:hover svg #time-800 {
+        opacity: 0; }
+      #tour-experience-overlay article .time-slide#slide-800 .clock:hover svg #time-900 {
+        opacity: 1; }
+      #tour-experience-overlay article .time-slide#slide-900 .bumper h1 span.stencil-number {
+        background: url(../images/stencil-tour-900.svg) no-repeat center center;
+        width: 249px; }
+      #tour-experience-overlay article .time-slide#slide-900 .clock svg #time-900 {
+        opacity: 1; }
+      #tour-experience-overlay article .time-slide#slide-900 .clock:hover svg #time-900 {
+        opacity: 0; }
+      #tour-experience-overlay article .time-slide#slide-900 .clock:hover svg #time-920 {
+        opacity: 1; }
+      #tour-experience-overlay article .time-slide#slide-920 .bumper h1 span.stencil-number {
+        background: url(../images/stencil-tour-920.svg) no-repeat center center;
+        width: 245px; }
+      #tour-experience-overlay article .time-slide#slide-920 .clock svg .fill-me {
+        fill: white; }
+      #tour-experience-overlay article .time-slide#slide-920 .clock svg #time-920 {
+        opacity: 1; }
+      #tour-experience-overlay article .time-slide#slide-920 .clock:hover svg #time-920 {
+        opacity: 0; }
+      #tour-experience-overlay article .time-slide#slide-920 .clock:hover svg #time-930 {
+        opacity: 1; }
+      #tour-experience-overlay article .time-slide#slide-930 .bumper h1 span.stencil-number {
+        background: url(../images/stencil-tour-930.svg) no-repeat center center;
+        width: 250px; }
+      #tour-experience-overlay article .time-slide#slide-930 .clock svg #time-930 {
+        opacity: 1; }
+      #tour-experience-overlay article .time-slide#slide-930 .clock:hover svg #time-930 {
+        opacity: 0; }
+      #tour-experience-overlay article .time-slide#slide-930 .clock:hover svg #time-945 {
+        opacity: 1; }
+      #tour-experience-overlay article .time-slide#slide-945 .bumper h1 span.stencil-number {
+        background: url(../images/stencil-tour-945.svg) no-repeat center center;
+        width: 247px; }
+      #tour-experience-overlay article .time-slide#slide-945 .clock svg #time-945 {
+        opacity: 1; }
+      #tour-experience-overlay article .time-slide#slide-945 .clock:hover svg #time-945 {
+        opacity: 0; }
+      #tour-experience-overlay article .time-slide#slide-945 .clock:hover svg #time-955 {
+        opacity: 1; }
+      #tour-experience-overlay article .time-slide#slide-955 .bumper h1 span.stencil-number {
+        background: url(../images/stencil-tour-955.svg) no-repeat center center;
+        width: 246px; }
+      #tour-experience-overlay article .time-slide#slide-955 .clock svg .fill-me {
+        fill: white; }
+      #tour-experience-overlay article .time-slide#slide-955 .clock svg #time-955 {
+        opacity: 1; }
+      #tour-experience-overlay article .time-slide#slide-955 .clock:hover svg #time-955 {
+        opacity: 0; }
+      #tour-experience-overlay article .time-slide#slide-955 .clock:hover svg #time-1000 {
+        opacity: 1; }
+      #tour-experience-overlay article .time-slide#slide-1000 .bumper h1 span.stencil-number {
+        background: url(../images/stencil-tour-1000.svg) no-repeat center center;
+        width: 305px; }
+      #tour-experience-overlay article .time-slide#slide-1000 .clock svg #time-1000 {
+        opacity: 1; }
+      #tour-experience-overlay article .time-slide#slide-1000 .clock:hover svg #time-1000 {
+        opacity: 0; }
+      #tour-experience-overlay article .time-slide#slide-1000 .clock:hover svg #time-1100 {
+        opacity: 1; }
+      #tour-experience-overlay article .time-slide#slide-1100 .bumper h1 span.stencil-number {
+        background: url(../images/stencil-tour-1100.svg) no-repeat center center;
+        width: 286px; }
+      #tour-experience-overlay article .time-slide#slide-1100 .clock {
+        margin-top: 80px;
+        left: 0;
+        position: relative;
+        clear: both;
+        float: left; }
+        #tour-experience-overlay article .time-slide#slide-1100 .clock svg #time-1100 {
+          opacity: 1; }
+        #tour-experience-overlay article .time-slide#slide-1100 .clock:hover svg #time-1100 {
+          opacity: 0; }
+        #tour-experience-overlay article .time-slide#slide-1100 .clock:hover svg #time-800 {
+          opacity: 1; }
+      #tour-experience-overlay article .time-slide.active {
+        opacity: 1;
+        z-index: 100;
+        visibility: visible; }
+        #tour-experience-overlay article .time-slide.active .background {
+          opacity: 1; }
+    #tour-experience-overlay article.loaded {
+      background: white; }
+      #tour-experience-overlay article.loaded .time-slide.active .bumper {
+        left: 100vw;
+        visibility: hidden; }
+        #tour-experience-overlay article.loaded .time-slide.active .bumper .anystretch {
+          position: fixed !important;
+          opacity: 0;
+          -webkit-transition: 0.15s ease-in-out 0.3s;
+          -moz-transition: 0.15s ease-in-out 0.3s;
+          transition: 0.15s ease-in-out 0.3s; }
+        #tour-experience-overlay article.loaded .time-slide.active .bumper h1 .stencil-number {
+          -webkit-transform: translateY(100px);
+          -moz-transform: translateY(100px);
+          -ms-transform: translateY(100px);
+          -o-transform: translateY(100px);
+          transform: translateY(100px);
+          opacity: 0; }
+        #tour-experience-overlay article.loaded .time-slide.active .bumper h1 .messaing {
+          opacity: 0; }
+      #tour-experience-overlay article.loaded .time-slide.active .background img {
+        -webkit-transform: scale(1.15);
+        -moz-transform: scale(1.15);
+        -ms-transform: scale(1.15);
+        -o-transform: scale(1.15);
+        transform: scale(1.15);
+        -webkit-transition: 30s ease-out;
+        -moz-transition: 30s ease-out;
+        transition: 30s ease-out; }
+    #tour-experience-overlay article.started {
+      background: white; }
+  #tour-experience-overlay.loading .time-slide.active .bumper {
+    visibility: visible;
+    left: 0; }
+    #tour-experience-overlay.loading .time-slide.active .bumper h1 span.stencil-number {
+      opacity: 1;
+      -webkit-transform: translateY(0px);
+      -moz-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+      -o-transform: translateY(0px);
+      transform: translateY(0px); }
+    #tour-experience-overlay.loading .time-slide.active .bumper h1 span.messaging {
+      opacity: 1; }
+  #tour-experience-overlay.loading .time-slide.active .background img {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1); }
+  #tour-experience-overlay.loading .details {
+    opacity: 0;
+    -webkit-transition: 0.15s ease-in-out 0.3s;
+    -moz-transition: 0.15s ease-in-out 0.3s;
+    transition: 0.15s ease-in-out 0.3s; }
+  #tour-experience-overlay.loading nav {
+    bottom: -100px; }
+    #tour-experience-overlay.loading nav ul li {
+      top: 100px; }
+  #tour-experience-overlay.loading .background {
+    opacity: 1; }
+  #tour-experience-overlay.loading #tour-back-btn {
+    top: -60px; }
+  #tour-experience-overlay.time-1100 nav .cta {
+    opacity: 0; }
+  #tour-experience-overlay nav {
+    position: absolute;
+    bottom: -100px;
+    background: white;
+    z-index: 100;
+    height: 100px;
+    left: 0;
+    opacity: 1;
+    width: 100vw;
+    -webkit-transition: 0.15s ease-in-out 0.3s;
+    -moz-transition: 0.15s ease-in-out 0.3s;
+    transition: 0.15s ease-in-out 0.3s; }
+    #tour-experience-overlay nav ul {
+      list-style: none;
+      left: 90px;
+      position: absolute;
+      bottom: 0; }
+      #tour-experience-overlay nav ul li {
+        float: left;
+        top: 0;
+        position: relative; }
+        #tour-experience-overlay nav ul li:nth-child(1) {
+          -webkit-transition: 0.15s ease-in-out 0.15s;
+          -moz-transition: 0.15s ease-in-out 0.15s;
+          transition: 0.15s ease-in-out 0.15s; }
+        #tour-experience-overlay nav ul li:nth-child(2) {
+          -webkit-transition: 0.15s ease-in-out 0.2s;
+          -moz-transition: 0.15s ease-in-out 0.2s;
+          transition: 0.15s ease-in-out 0.2s; }
+        #tour-experience-overlay nav ul li:nth-child(3) {
+          -webkit-transition: 0.15s ease-in-out 0.25s;
+          -moz-transition: 0.15s ease-in-out 0.25s;
+          transition: 0.15s ease-in-out 0.25s; }
+        #tour-experience-overlay nav ul li:nth-child(4) {
+          -webkit-transition: 0.15s ease-in-out 0.3s;
+          -moz-transition: 0.15s ease-in-out 0.3s;
+          transition: 0.15s ease-in-out 0.3s; }
+        #tour-experience-overlay nav ul li:nth-child(5) {
+          -webkit-transition: 0.15s ease-in-out 0.35s;
+          -moz-transition: 0.15s ease-in-out 0.35s;
+          transition: 0.15s ease-in-out 0.35s; }
+        #tour-experience-overlay nav ul li:nth-child(6) {
+          -webkit-transition: 0.15s ease-in-out 0.4s;
+          -moz-transition: 0.15s ease-in-out 0.4s;
+          transition: 0.15s ease-in-out 0.4s; }
+        #tour-experience-overlay nav ul li:nth-child(7) {
+          -webkit-transition: 0.15s ease-in-out 0.45s;
+          -moz-transition: 0.15s ease-in-out 0.45s;
+          transition: 0.15s ease-in-out 0.45s; }
+        #tour-experience-overlay nav ul li:nth-child(8) {
+          -webkit-transition: 0.15s ease-in-out 0.5s;
+          -moz-transition: 0.15s ease-in-out 0.5s;
+          transition: 0.15s ease-in-out 0.5s; }
+        #tour-experience-overlay nav ul li a {
+          color: #212121;
+          display: block;
+          opacity: 0.5;
+          position: relative;
+          padding: 0 40px 40px 20px;
+          border-left: 2px solid #212121;
+          font-weight: bold;
+          font-family: "franklin-gothic-urw-comp", Arial, sans-serif;
+          -webkit-transition: 0.15s ease-in-out;
+          -moz-transition: 0.15s ease-in-out;
+          transition: 0.15s ease-in-out; }
+          #tour-experience-overlay nav ul li a:hover {
+            text-decoration: none;
+            opacity: 1; }
+          #tour-experience-overlay nav ul li a.active {
+            opacity: 1; }
+        #tour-experience-overlay nav ul li.thick-border a {
+          border-left-width: 4px; }
+    #tour-experience-overlay nav .cta {
+      right: 90px;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+      -webkit-transition: opacity 0.15s ease-in-out 0.3s;
+      -moz-transition: opacity 0.15s ease-in-out 0.3s;
+      transition: opacity 0.15s ease-in-out 0.3s; }
